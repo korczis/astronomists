@@ -1,0 +1,5 @@
+.aiad-backup-*/
+.aiad-inject-*.log
+.inject-backup-*/
+.inject-deployment-*.log
+.DS_Store

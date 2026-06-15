@@ -1,0 +1,87 @@
+# CLAUDE.md — Astronomists (Astronautisté Brand)
+
+> 🇨🇿 Konfigurace projektu pro práci s Claude Code. CZ rationale + EN technical body.
+> Injektováno z Prismatic Platform AIAD (`/inject`, Core bootstrap) — 2026-06-15.
+
+## Project type
+
+**Docs / brand package** — žádný build language (no `mix.exs`/`package.json`/`Cargo.toml`).
+Obsah: brand mytologie, vizuální design systém, messaging framework. Publikováno jako
+GitHub Pages site (větev `gh-pages`, https://korczis.github.io/astronomists/).
+
+Toto **není** code repo — neexistuje `mix`/`npm`/`cargo` pipeline. Quality gates jsou
+dokumentační (links, language, metadata hygiene), ne kompilace/testy.
+
+## Communication style
+
+- Direct, concise, technical. Žádné zbytečné zdvořilosti.
+- **Default jazyk odpovědí: čeština (cs-CZ)**; mirror the user.
+- **Vždy English**: code identifiers, conventional commit prefixes
+  (`feat:`/`fix:`/`docs:`/`chore:`/`refactor:`), package names, log tokens.
+- Brand tagline a copy zůstávají v originále (CZ): *„Myšlet Hvězd, Jednat Vědecky."*
+
+## Repository layout
+
+```
+astronomists/
+├── brand-book/       # mytologie, pilíře, narativní architektura
+├── design-system/    # barvy, typografie, komponenty, accessibility, design tokens (JSON)
+├── messaging/        # tone of voice, copy templates, playbook
+├── motifs/           # vizuální motivy
+├── assets/           # asset inventory
+├── injection-config/ # interní deployment dokumentace (NEpublikuje se na Pages)
+├── .aiad/            # AIAD infrastruktura (agents, manifest)
+├── .claude/          # protocols, session-context, agent registry
+└── .githooks/        # portable pre-commit (docs quality gates)
+```
+
+## Design tokens (zdroj pravdy)
+
+`design-system/astronautiste-design-system.json`. Klíčová paleta:
+
+| Token | Hex | Použití |
+|---|---|---|
+| Void Black | `#0a0a0a` | primární pozadí |
+| Presence White | `#f8f8f8` | typografie, content |
+| Signal Red | `#e63946` | emphasis, action |
+| Prague Gold | `#d4a574` | warmth accent (jen na tmavém) |
+| Space Blue | `#1d3557` | depth, credibility |
+| Growth Green | `#06a77d` | positive outcome |
+
+Fonty: `Inter` (sans), `Georgia` (serif).
+
+## Working agreements
+
+- **Read before edit.** U markdownu zachovávej existující strukturu nadpisů a hustotu.
+- **Brand voice je závazný** — viz `messaging/ASTRONAUTISTE_MESSAGING_FRAMEWORK.md`.
+- **Žádné secrets v repu.** Public repo (`korczis/astronomists`).
+- **GitHub Pages:** site se staví z větve `gh-pages` (root). Master a gh-pages jsou
+  oddělené; obsah na Pages se synchronizuje vědomě, ne automaticky z master.
+
+## Protocols (`.claude/protocols/`)
+
+Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
+
+- `CONTEXT-MANAGEMENT-PROTOCOL.md` — správa kontextu a session-context.
+- `claim-verification.protocol.md` — ověřuj tvrzení, neuváděj nepodložená fakta.
+- `AGENT-CREATION-PROTOCOL.md` — standard pro tvorbu agentů.
+- `crisis-response-protocols.md` — relevantní k brand crisis messaging.
+
+## Agents (`.aiad/agents/`)
+
+- `commit-coordinator` — koordinace commitů (conventional format + co-author footer).
+- `session-context-synthesizer` — syntéza session kontextu do `.claude/session-context/`.
+
+Katalog: `.claude/AGENT_REGISTRY.md`.
+
+## Git workflow
+
+- Conventional commits: `type(scope): description` + Claude co-author footer.
+- Branches: `feature/`, `fix/`, `refactor/` prefixy.
+- Nikdy `--no-verify`; po selhání hooku vytvoř NOVÝ commit (neamenduj).
+- `git config core.hooksPath .githooks` aktivuje portable pre-commit.
+
+---
+
+**Injected by:** `/inject` (aiad-injection-coordinator) · Prismatic Platform AIAD
+**Scope:** Core bootstrap · **Strategy:** preserve · **Date:** 2026-06-15

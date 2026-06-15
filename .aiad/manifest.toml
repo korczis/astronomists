@@ -1,0 +1,39 @@
+# Astronomists — AIAD Manifest
+# Injected from Prismatic Platform AIAD via /inject (Core bootstrap)
+
+[project]
+name = "Astronomists"
+description = "Astronautisté brand package — mythology, design system, messaging. Docs/brand repo published via GitHub Pages."
+repository = "https://github.com/korczis/astronomists"
+type = "docs"
+version = "1.0.0"
+
+[inject]
+source = "prismatic-platform"
+scope = "core-bootstrap"
+strategy = "preserve"
+spec_url = "https://aiad.dev/spec/1.0.0"
+spec_version = "1.0.0"
+injected = "2026-06-15"
+
+[entity_counts]
+agents = 2
+protocols = 4
+commands = 0
+workflows = 0
+
+[[agents]]
+id = "commit-coordinator"
+source = ".aiad/agents/commit-coordinator.agent.md"
+roles = ["git", "commit", "coordination"]
+
+[[agents]]
+id = "session-context-synthesizer"
+source = ".aiad/agents/session-context-synthesizer.agent.md"
+roles = ["session-context", "synthesis", "documentation"]
+
+[protocols]
+context_management = ".claude/protocols/CONTEXT-MANAGEMENT-PROTOCOL.md"
+claim_verification = ".claude/protocols/claim-verification.protocol.md"
+agent_creation = ".claude/protocols/AGENT-CREATION-PROTOCOL.md"
+crisis_response = ".claude/protocols/crisis-response-protocols.md"

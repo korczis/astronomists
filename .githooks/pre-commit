@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# Portable pre-commit for astronomists (docs/brand repo).
+# Injected via /inject (Core bootstrap). NO mix/npm/cargo coupling — docs-only gates.
+#
+# Activate once:  git config core.hooksPath .githooks
+set -euo pipefail
+
+fail=0
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$staged" ] && exit 0
+
+# --- Gate 1: Apple/macOS metadata hygiene (no .DS_Store / AppleDouble) ---
+meta=$(printf '%s\n' "$staged" | grep -E '(^|/)\.DS_Store$|(^|/)\._' || true)
+if [ -n "$meta" ]; then
+  echo "BLOCKED: Apple metadata files staged:"; echo "$meta"
+  echo "  fix: git rm --cached <file> && echo '.DS_Store' >> .gitignore"
+  fail=1
+fi
+
+# --- Gate 2: CZE language check (advisory) — flag obvious machine-translation tells ---
+# Level 2 MODERATE: warns, does not block. Mirrors Prismatic CZE pillar #19.
+for f in $(printf '%s\n' "$staged" | grep -E '\.md$' || true); do
+  [ -f "$f" ] || continue
+  if grep -qiE 'lorem ipsum|TODO[: ]|FIXME|XXX' "$f"; then
+    echo "WARN ($f): placeholder/TODO marker in docs (advisory)."
+  fi
+done
+
+# --- Gate 3: no secrets (basic) ---
+secrets=$(git diff --cached -U0 | grep -E '^\+' | grep -iE 'AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}' || true)
+if [ -n "$secrets" ]; then
+  echo "BLOCKED: possible secret in staged diff."
+  fail=1
+fi
+
+# --- Gate 4: trailing-whitespace / merge markers in markdown ---
+markers=$(git diff --cached -U0 | grep -E '^\+(<<<<<<<|=======|>>>>>>>)' || true)
+if [ -n "$markers" ]; then
+  echo "BLOCKED: unresolved merge conflict markers staged."
+  fail=1
+fi
+
+if [ "$fail" -ne 0 ]; then
+  echo "pre-commit: FAILED. Create a NEW commit after fixing (do not --no-verify)."
+  exit 1
+fi
+echo "pre-commit: passed (docs gates)."
+exit 0
