@@ -9,6 +9,8 @@ eyebrow = "Pilíř 01"
 lead = "Někdy stačí změnit úhel pohledu, aby se změnilo všechno. Z dostatečné výšky vypadá i ten největší spor jako tečka na jedné modré kuličce."
 image = "/og/social/astronautiste-jedna-planeta-mnoho-generaci-wide.jpg"
 og_image = "/og/pages/proc-perspektiva.png"
+illustration = "/illustrations/proc-perspektiva.jpg"
+illustration_alt = "Země z vesmíru — jedna planeta, mnoho generací."
 og_image_alt = "Pohled na Zemi z vesmíru, jedna planeta a mnoho generací"
 anchor = "„Overview effect — Zemi vidíš celou, najednou.“"
 +++
