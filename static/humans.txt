@@ -8,4 +8,4 @@
   Language: Čeština (cs-CZ) + English
   Standards: HTML5, CSS3, JSON-LD, Open Graph
   Components: Zola, Tailwind CSS, Flowbite, GitHub Pages
-  Tagline: Myšlet Hvězd, Jednat Vědecky.
+  Tagline: Myslíme na hvězdy, jednáme vědecky.

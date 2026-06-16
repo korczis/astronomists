@@ -1,6 +1,6 @@
 base_url = "https://astronautiste.cz"
 title = "Astronautisté"
-description = "Astronautisté — optimistické hnutí za větší horizont. Věříme, že každé dítě by mělo aspoň jednou vidět Zemi z výšky. Vesmír není luxus, je to perspektiva. Myšlet Hvězd, Jednat Vědecky."
+description = "Astronautisté — optimistické hnutí za větší horizont. Věříme, že každé dítě by mělo aspoň jednou vidět Zemi z výšky. Vesmír není luxus, je to perspektiva. Myslíme na hvězdy, jednáme vědecky."
 default_language = "cs"
 
 compile_sass = false
@@ -20,9 +20,9 @@ internal_level = "error"
 external_level = "warn"
 
 [extra]
-tagline_cs = "Myšlet Hvězd, Jednat Vědecky."
+tagline_cs = "Myslíme na hvězdy, jednáme vědecky."
 promise = "Vesmír není luxus. Vesmír je perspektiva."
 og_image = "/og/astronautiste-og.png"
-og_image_alt = "Astronautisté — Myšlet Hvězd, Jednat Vědecky."
+og_image_alt = "Astronautisté — Myslíme na hvězdy, jednáme vědecky."
 repo_url = "https://github.com/korczis/astronomists"
-contact_email = "korcak@able.cz"
+contact_email = "korczis@gmail.com"
