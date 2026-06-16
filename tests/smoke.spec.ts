@@ -5,27 +5,27 @@ test.describe('Astronautisté landing — smoke', () => {
     await page.goto('/');
     await expect(page).toHaveTitle(/Astronautisté/);
     await expect(page.locator('html')).toHaveAttribute('lang', 'cs');
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Without guessing');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Dětem patří hvězdy');
   });
 
   test('hero CTAs and nav present', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByRole('link', { name: /Launch your investigation/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Přidej se/i }).first()).toBeVisible();
     await expect(page.locator('nav')).toContainText('ASTRONAUTISTÉ');
   });
 
-  test('three product pillars render', async ({ page }) => {
+  test('three movement pillars render', async ({ page }) => {
     await page.goto('/');
-    await expect(page.locator('#pilire')).toContainText('Intelligence Without Borders');
-    await expect(page.locator('#pilire')).toContainText('Confidence You Can Verify');
-    await expect(page.locator('#pilire')).toContainText('Auditable Decisions');
+    await expect(page.locator('#proc')).toContainText('Perspektiva');
+    await expect(page.locator('#proc')).toContainText('Zvídavost');
+    await expect(page.locator('#proc')).toContainText('Budoucnost');
   });
 
-  test('use-cases cover the four personas', async ({ page }) => {
+  test('audiences cover the four groups', async ({ page }) => {
     await page.goto('/');
-    const uc = page.locator('#use-cases');
-    for (const persona of ['CISO', 'CFO', 'Intelligence Analyst', 'Founder']) {
-      await expect(uc).toContainText(persona);
+    const uc = page.locator('#pro-koho');
+    for (const aud of ['Rodiče', 'Učitelé', 'Studenti', 'Vědci']) {
+      await expect(uc).toContainText(aud);
     }
   });
 

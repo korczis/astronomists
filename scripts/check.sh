@@ -31,7 +31,7 @@ else
 fi
 
 echo "==> Key content present"
-grep -q "Without guessing" "$PUB/index.html" && echo "ok   hero headline" || { echo "FAIL: hero headline missing"; fail=1; }
+grep -q "Dětem patří hvězdy" "$PUB/index.html" && echo "ok   hero headline" || { echo "FAIL: hero headline missing"; fail=1; }
 grep -q "astronautiste.cz/og/astronautiste-og.png" "$PUB/index.html" && echo "ok   absolute og:image" || { echo "FAIL: og:image not absolute"; fail=1; }
 
 [ "$fail" -eq 0 ] && echo "✅ check passed" || { echo "❌ check failed"; exit 1; }

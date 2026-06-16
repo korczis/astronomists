@@ -1,5 +1,5 @@
 +++
 title = "Astronautisté"
-description = "Decisions under uncertainty. Without guessing. — auditovatelná intelligence platforma, kde každé rozhodnutí stojí na ověřených důkazech. Myšlet Hvězd, Jednat Vědecky."
+description = "Astronautisté — optimistické hnutí za větší horizont. Každé dítě by mělo aspoň jednou vidět Zemi z výšky. Vesmír není luxus, je to perspektiva. Myšlet Hvězd, Jednat Vědecky."
 template = "index.html"
 +++

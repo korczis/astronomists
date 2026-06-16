@@ -2,110 +2,98 @@
 
 {% block content %}
 <!-- ============ HERO ============ -->
-<section id="platforma" class="relative overflow-hidden bg-cosmic">
+<section id="hnuti" class="relative overflow-hidden bg-cosmic">
   <div class="container-content grid items-center gap-10 py-20 md:py-28 lg:grid-cols-12">
     <div class="lg:col-span-7">
-      <span class="eyebrow"><span class="h-2 w-2 rounded-full bg-gold shadow-[0_0_14px_#d4a574]"></span> Astronautisté · Intelligence Platform</span>
+      <span class="eyebrow"><span class="h-2 w-2 rounded-full bg-gold shadow-[0_0_14px_#d4a574]"></span> Hnutí za větší horizont</span>
       <p class="mt-5 font-serif text-lg italic text-gold/90">{{ config.extra.tagline_cs }}</p>
       <h1 class="mt-3 text-4xl font-extrabold leading-[1.05] tracking-tight text-presence sm:text-5xl lg:text-6xl">
-        Decisions under uncertainty.<br><span class="text-gold">Without guessing.</span>
+        Dětem patří hvězdy.<br><span class="text-gold">Každé dítě na orbitu.</span>
       </h1>
       <div class="signal-rule mt-7"></div>
       <p class="mt-7 max-w-xl text-lg text-light-gray">
-        Every intelligence analyst, due diligence team, and risk officer faces the same choice:
-        rush to judgment, or take time to verify. <strong class="text-presence">Astronautisté eliminates that trade-off.</strong>
+        Astronautisté nejsou o raketách. Jsou o&nbsp;perspektivě.
+        <strong class="text-presence">Věříme, že každé dítě by mělo aspoň jednou vidět Zemi z výšky</strong>
+        — a pochopit, že budoucnost není sci-fi, ale plán.
       </p>
       <p class="mt-4 max-w-xl text-base text-mid-gray">
-        An auditable intelligence dossier supported by 100+ verified sources — designed to turn
-        6&nbsp;weeks of due diligence into 2&nbsp;days. Every recommendation is traceable.
-        Every decision is defensible.
+        Cesta ke hvězdám nezačíná raketou. Začíná dětskou otázkou: <em class="not-italic text-light-gray">„Proč?“</em>
       </p>
       <div class="mt-9 flex flex-wrap items-center gap-4">
-        <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautisté%20—%20launch%20an%20investigation"
+        <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautist%C3%A9%20%E2%80%94%20p%C5%99id%C3%A1v%C3%A1m%20se"
           class="inline-flex items-center gap-2 rounded-lg bg-presence px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-void transition hover:bg-gold">
-          Launch your investigation
+          Přidej se
           <svg class="h-4 w-4" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
         </a>
-        <a href="#pilire" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
-          Jak to funguje
+        <a href="#proc" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
+          Proč Astronautisté
         </a>
       </div>
     </div>
 
     <div class="lg:col-span-5">
       <div class="rounded-2xl border border-mid-gray/70 bg-deep-gray/70 p-6 backdrop-blur">
-        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mid-gray">The promise</h2>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.18em] text-mid-gray">Program hnutí</h2>
         <p class="mt-3 text-lg font-medium text-presence">
-          Every recommendation is traceable. Every decision is auditable. Every score is evidence-backed.
+          Nejoptimističtější a nejambicióznější „strana“ v zemi. Usmějete se — a pak vám dojde,
+          že by to vlastně nebylo špatné.
         </p>
-        <dl class="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-mid-gray/60 bg-mid-gray/40">
-          <div class="bg-deep-gray p-4">
-            <dt class="text-2xl font-extrabold text-gold">127+</dt>
-            <dd class="mt-1 text-xs text-mid-gray">self-registering OSINT adapters</dd>
-          </div>
-          <div class="bg-deep-gray p-4">
-            <dt class="text-2xl font-extrabold text-gold">50+</dt>
-            <dd class="mt-1 text-xs text-mid-gray">risk dimensions monitored</dd>
-          </div>
-          <div class="bg-deep-gray p-4">
-            <dt class="text-2xl font-extrabold text-gold">100+</dt>
-            <dd class="mt-1 text-xs text-mid-gray">verified sources per dossier</dd>
-          </div>
-          <div class="bg-deep-gray p-4">
-            <dt class="text-2xl font-extrabold text-gold">6&nbsp;wk&nbsp;→&nbsp;2&nbsp;d</dt>
-            <dd class="mt-1 text-xs text-mid-gray">due-diligence cycle, by design</dd>
-          </div>
-        </dl>
+        <ul class="mt-6 space-y-px overflow-hidden rounded-xl border border-mid-gray/60 bg-mid-gray/40">
+          <li class="bg-deep-gray p-4 text-sm text-light-gray"><span class="text-gold">→</span> Školní výlet na orbitální stanici</li>
+          <li class="bg-deep-gray p-4 text-sm text-light-gray"><span class="text-gold">→</span> Vesmír jako základní dětské právo</li>
+          <li class="bg-deep-gray p-4 text-sm text-light-gray"><span class="text-gold">→</span> Každé dítě aspoň jednou vidí Zemi z výšky</li>
+          <li class="bg-deep-gray p-4 text-sm font-medium text-presence"><span class="text-gold">→</span> Ne větší stát. Větší budoucnost.</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PILLARS ============ -->
-<section id="pilire" class="border-t border-mid-gray/40 py-20 md:py-24">
+<!-- ============ PROČ / PILLARS ============ -->
+<section id="proc" class="border-t border-mid-gray/40 py-20 md:py-24">
   <div class="container-content">
-    <span class="eyebrow">Tři pilíře platformy</span>
+    <span class="eyebrow">Tři pilíře perspektivy</span>
     <h2 class="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-presence sm:text-4xl">
-      Od signálu k auditovatelnému rozhodnutí
+      Od dětské otázky k větší budoucnosti
     </h2>
     <div class="mt-12 grid gap-6 md:grid-cols-3">
 
       <article class="pillar-card">
         <span class="inline-flex w-fit items-center rounded-full border border-gold/50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold">01</span>
-        <h3 class="text-xl font-bold text-presence">Intelligence Without Borders</h3>
+        <h3 class="text-xl font-bold text-presence">Perspektiva</h3>
         <ul class="space-y-2 text-sm text-light-gray">
-          <li>127+ self-registering OSINT adapters</li>
-          <li>Structured entity resolution + relationship mapping</li>
-          <li>Evidence provenance tracking — every source cited</li>
+          <li>Overview effect — Zemi vidíš celou, najednou.</li>
+          <li>Z vesmíru nikdo nevidí státní hranice.</li>
+          <li>Malý člověk, velký vesmír, ještě větší budoucnost.</li>
         </ul>
         <p class="mt-auto border-t border-mid-gray/50 pt-4 text-sm font-medium text-gold">
-          → Comprehensive intelligence dossier in hours, not weeks
+          → Dítě, které vidí Zemi z výšky, pochopí svůj potenciál
         </p>
       </article>
 
       <article class="pillar-card">
         <span class="inline-flex w-fit items-center rounded-full border border-gold/50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold">02</span>
-        <h3 class="text-xl font-bold text-presence">Confidence You Can Verify</h3>
+        <h3 class="text-xl font-bold text-presence">Zvídavost</h3>
         <ul class="space-y-2 text-sm text-light-gray">
-          <li>Multi-dimensional scoring — legal, financial, integrity, completeness</li>
-          <li>Competing hypothesis evaluation (Bayesian posterior updates)</li>
-          <li>Continuous anomaly detection (statistical drift monitoring)</li>
+          <li>Zvídavost jako občanská ctnost.</li>
+          <li>Neučíme děti odpovědi — učíme je ptát se.</li>
+          <li>Každý velký objev začal otázkou „Proč?“.</li>
         </ul>
         <p class="mt-auto border-t border-mid-gray/50 pt-4 text-sm font-medium text-gold">
-          → Every score traceable to source evidence
+          → Budoucnost nepatří těm, kdo znají odpovědi
         </p>
       </article>
 
       <article class="pillar-card">
         <span class="inline-flex w-fit items-center rounded-full border border-gold/50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold">03</span>
-        <h3 class="text-xl font-bold text-presence">Auditable Decisions</h3>
+        <h3 class="text-xl font-bold text-presence">Budoucnost</h3>
         <ul class="space-y-2 text-sm text-light-gray">
-          <li>Hypothesis competition with explicit evidence linking</li>
-          <li>Epistemic confidence from evidence quantity, quality, consistency</li>
-          <li>Outcome tracking + recommendation-vs-reality calibration</li>
+          <li>Budoucnost není sci-fi. Je to plán.</li>
+          <li>Ne dystopie, ne kolaps — budování.</li>
+          <li>Nezdědili jsme svět od předků. Půjčili jsme si ho od dětí.</li>
         </ul>
         <p class="mt-auto border-t border-mid-gray/50 pt-4 text-sm font-medium text-gold">
-          → Measurable system accuracy that improves over time
+          → Budoucnost nezdědíme. Vychováme ji.
         </p>
       </article>
 
@@ -113,96 +101,112 @@
   </div>
 </section>
 
-<!-- ============ EVIDENCE / VOICE ============ -->
-<section id="evidence" class="border-t border-mid-gray/40 bg-deep-gray/40 py-20 md:py-24">
+<!-- ============ MANIFEST / SLOGANS ============ -->
+<section id="manifest" class="border-t border-mid-gray/40 bg-deep-gray/40 py-20 md:py-24">
   <div class="container-content grid gap-10 lg:grid-cols-2 lg:items-center">
     <div>
-      <span class="eyebrow">Žádné black boxy</span>
-      <h2 class="mt-3 text-3xl font-bold tracking-tight text-presence sm:text-4xl">
-        Trust is earned through evidence,<br>not asserted through authority.
+      <span class="eyebrow">Manifest v jedné větě</span>
+      <h2 class="mt-3 font-serif text-3xl font-bold leading-snug tracking-tight text-presence sm:text-4xl">
+        „Nemůžeme dětem darovat budoucnost.<br>Můžeme jim darovat šanci ji vytvořit.“
       </h2>
       <p class="mt-6 text-light-gray">
-        We cite evidence, not adjectives. Confidence is distinguished from certainty —
-        a score reads <em class="text-presence not-italic">"78% confident because 7 of 8 sources agree; the 8th is unverified,"</em>
-        never "seems to suggest." Every finding is one click away from the evidence that supports it.
+        Astronomista není astronom ani astronaut. Je to člověk, který věří v lidský potenciál
+        a pomáhá ostatním zvednout hlavu. Méně účetních — více lidí, kteří se dívají nahoru.
       </p>
     </div>
-    <ul class="grid grid-cols-2 gap-3">
-      {% set words = ["Traceable", "Auditable", "Verified", "Evidence", "Source attribution", "Confidence scoring", "Defensible", "Transparent"] %}
-      {% for w in words %}
-      <li class="rounded-xl border border-mid-gray/60 bg-void px-4 py-3 text-sm font-medium text-presence">{{ w }}</li>
+    <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+      {% set slogans = ["Dětem patří hvězdy.", "Vesmír není luxus. Vesmír je perspektiva.", "Každé dítě na orbitu — ne raketou, perspektivou.", "Budoucnost nezačíná u volební urny.", "Děti potřebují větší horizont.", "Exkurze za atmosféru.", "První republika měla sokoly. My budeme mít astronauty.", "Ne větší stát. Větší budoucnost."] %}
+      {% for s in slogans %}
+      <li class="rounded-xl border border-mid-gray/60 bg-void px-4 py-3 text-sm font-medium text-presence">{{ s }}</li>
       {% endfor %}
     </ul>
   </div>
 </section>
 
-<!-- ============ USE CASES ============ -->
-<section id="use-cases" class="border-t border-mid-gray/40 py-20 md:py-24">
+<!-- ============ PRO KOHO ============ -->
+<section id="pro-koho" class="border-t border-mid-gray/40 py-20 md:py-24">
   <div class="container-content">
     <span class="eyebrow">Pro koho</span>
     <h2 class="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-presence sm:text-4xl">
-      Stejná metoda. Čtyři rozhodnutí.
+      Pro každého jeden důvod
     </h2>
 
     <div class="mt-12 grid gap-6 md:grid-cols-2">
 
       <article class="rounded-2xl border border-mid-gray/70 bg-deep-gray p-7">
-        <h3 class="text-lg font-bold text-presence">CISO</h3>
-        <p class="mt-2 text-sm text-mid-gray">Board demands quantified external risk — even what you can't see.</p>
-        <p class="mt-4 text-sm text-light-gray">
-          Continuous monitoring of supply chain, partners, and adversary ecosystems. Every anomaly
-          flagged with a confidence score; every score traces back to source evidence.
+        <h3 class="text-lg font-bold text-presence">Rodiče &amp; mámy</h3>
+        <p class="mt-4 text-base text-light-gray">
+          „Každé dítě si zaslouží nejen vzdělání, ale také důvod, <span class="text-presence">proč</span> se učit.“
         </p>
-        <p class="mt-4 text-sm font-medium text-gold">Audit-ready evidence chains for NIS2, DORA, SOC&nbsp;2.</p>
+        <p class="mt-4 text-sm font-medium text-gold">Darujme dětem šanci vytvořit si vlastní budoucnost.</p>
       </article>
 
       <article class="rounded-2xl border border-mid-gray/70 bg-deep-gray p-7">
-        <h3 class="text-lg font-bold text-presence">CFO</h3>
-        <p class="mt-2 text-sm text-mid-gray">Due diligence eats time and capital. Missed signals cost millions.</p>
-        <p class="mt-4 text-sm text-light-gray">
-          Astronautisté doesn't replace your instinct — it verifies it with evidence. An auditable
-          recommendation supported by 100+ sources, with the evidence chain your board can read.
+        <h3 class="text-lg font-bold text-presence">Učitelé</h3>
+        <p class="mt-4 text-base text-light-gray">
+          „Škola nemá plnit hlavy informacemi. <span class="text-presence">Má zapalovat touhu po poznání.</span>“
         </p>
-        <p class="mt-4 text-sm font-medium text-gold">M&amp;A due diligence designed for 2 days, not 6 weeks.</p>
+        <p class="mt-4 text-sm font-medium text-gold">Zvídavost jako občanská ctnost.</p>
       </article>
 
       <article class="rounded-2xl border border-mid-gray/70 bg-deep-gray p-7">
-        <h3 class="text-lg font-bold text-presence">Intelligence Analyst</h3>
-        <p class="mt-2 text-sm text-mid-gray">Too many sources, low signal-to-noise. Manual cross-referencing is error-prone.</p>
-        <p class="mt-4 text-sm text-light-gray">
-          Structured OSINT, entity resolution, and relationship mapping — all with source attribution
-          you can defend in a briefing. Less busywork. More thinking.
+        <h3 class="text-lg font-bold text-presence">Studenti</h3>
+        <p class="mt-4 text-base text-light-gray">
+          „Budoucnost nepatří těm, kdo se naučili odpovědi. <span class="text-presence">Patří těm, kdo se naučili ptát.</span>“
         </p>
-        <p class="mt-4 text-sm font-medium text-gold">Hypothesis tracking with competing-evidence evaluation.</p>
+        <p class="mt-4 text-sm font-medium text-gold">Co je tam dál? Zjisti to.</p>
       </article>
 
       <article class="rounded-2xl border border-mid-gray/70 bg-deep-gray p-7">
-        <h3 class="text-lg font-bold text-presence">Founder</h3>
-        <p class="mt-2 text-sm text-mid-gray">Expanding internationally — who are my partners, and what's the risk?</p>
-        <p class="mt-4 text-sm text-light-gray">
-          Comprehensive background checks, social-network analysis, behavioral anomaly detection.
-          A trust score with full evidence behind it — not gut feeling. Verified.
+        <h3 class="text-lg font-bold text-presence">Vědci &amp; technici</h3>
+        <p class="mt-4 text-base text-light-gray">
+          „Každý velký objev začal dítětem, <span class="text-presence">které se odmítlo přestat ptát proč.</span>“
         </p>
-        <p class="mt-4 text-sm font-medium text-gold">Know your partners before you sign.</p>
+        <p class="mt-4 text-sm font-medium text-gold">Technologie nejsou cíl. Jsou nástroj, kterým rozšiřujeme možnosti.</p>
       </article>
 
     </div>
   </div>
 </section>
 
+<!-- ============ MOTIVY / VIZUÁLNÍ MYTOLOGIE ============ -->
+<section id="motivy" class="border-t border-mid-gray/40 bg-cosmic py-20 md:py-24">
+  <div class="container-content">
+    <span class="eyebrow">Vizuální mytologie</span>
+    <h2 class="mt-3 max-w-2xl text-3xl font-bold tracking-tight text-presence sm:text-4xl">
+      Deset motivů, jeden horizont
+    </h2>
+    <p class="mt-5 max-w-2xl text-light-gray">
+      Žádné klišé. Monumentální tvary, malé lidské postavy, dramatické světlo — NASA 1975
+      potkává Kubricka. Jeden silný nápad, minimum textu, pochopitelné za dvě vteřiny.
+    </p>
+    <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      {% set motifs = ["Pale Blue Dot", "První pohled", "Hranice", "Evoluce", "Generace 2100", "Školní výlet", "Carl Sagan vibe", "Matka", "Česká republika 2075", "Nejnebezpečnější poster"] %}
+      {% for m in motifs %}
+      <div class="rounded-xl border border-mid-gray/60 bg-deep-gray px-4 py-5 text-center text-sm font-medium text-light-gray">{{ m }}</div>
+      {% endfor %}
+    </div>
+    <div class="mt-9">
+      <a href="/docs/" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
+        Celá knihovna motivů
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CTA ============ -->
-<section class="border-t border-mid-gray/40 bg-cosmic py-20 md:py-24">
+<section class="border-t border-mid-gray/40 py-20 md:py-24">
   <div class="container-content text-center">
     <h2 class="mx-auto max-w-3xl text-3xl font-extrabold tracking-tight text-presence sm:text-4xl">
-      Explore with Confidence. Verify with Evidence.
+      Zvedni hlavu. Přidej se k&nbsp;Astronautistům.
     </h2>
     <p class="mx-auto mt-4 max-w-xl text-light-gray">
-      Every decision is traceable. Every recommendation is auditable.
+      Budoucnost nezdědíme. Vychováme ji.
     </p>
     <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
-      <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautisté%20—%20risk%20intelligence%20assessment"
+      <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautist%C3%A9%20%E2%80%94%20chci%20pomoct"
         class="inline-flex items-center gap-2 rounded-lg bg-signal px-7 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:brightness-110">
-        Request a risk assessment
+        Přidej se k hnutí
       </a>
       <a href="{{ config.extra.repo_url }}" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-7 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
         Prozkoumat na GitHubu
@@ -219,8 +223,8 @@
       Kompletní brand package — uložený a otevřený
     </h2>
     <p class="mt-5 max-w-2xl text-light-gray">
-      Brand mytologie, vizuální design systém a messaging framework jsou součástí tohoto repozitáře.
-      Tato landing page je jejich výkladní skříň — zdroj pravdy zůstává verzovaný v gitu.
+      Brand mytologie, vizuální design systém a messaging framework hnutí jsou součástí tohoto repozitáře.
+      Tato stránka je jejich výkladní skříň — zdroj pravdy zůstává verzovaný v gitu.
     </p>
     <div class="mt-9 flex flex-wrap gap-4">
       <a href="/docs/" class="inline-flex items-center rounded-lg bg-presence px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-void transition hover:bg-gold">

@@ -13,7 +13,7 @@ test.describe('astronautiste.cz — LIVE deployment', () => {
   test('is the NEW Zola site, not the old Jekyll hub (freshness gate)', async ({ page }) => {
     await page.goto('/');
     // Definitive new-site markers — fail loudly if the CDN still serves the old hub.
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Without guessing');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Dětem patří hvězdy');
     await expect(page.locator('script[src="/js/flowbite.min.js"]')).toHaveCount(1);
     await expect(page.locator('link[href="/css/main.css"]')).toHaveCount(1);
     await expect(page.locator('html')).toHaveAttribute('lang', 'cs');
@@ -28,13 +28,13 @@ test.describe('astronautiste.cz — LIVE deployment', () => {
     await expect(page.locator('script[type="application/ld+json"]')).toHaveCount(1);
   });
 
-  test('pillars and personas render', async ({ page }) => {
+  test('pillars and audiences render', async ({ page }) => {
     await page.goto('/');
-    for (const t of ['Intelligence Without Borders', 'Confidence You Can Verify', 'Auditable Decisions']) {
-      await expect(page.locator('#pilire')).toContainText(t);
+    for (const t of ['Perspektiva', 'Zvídavost', 'Budoucnost']) {
+      await expect(page.locator('#proc')).toContainText(t);
     }
-    for (const p of ['CISO', 'CFO', 'Intelligence Analyst', 'Founder']) {
-      await expect(page.locator('#use-cases')).toContainText(p);
+    for (const a of ['Rodiče', 'Učitelé', 'Studenti', 'Vědci']) {
+      await expect(page.locator('#pro-koho')).toContainText(a);
     }
   });
 
