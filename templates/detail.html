@@ -41,6 +41,16 @@
 
   <!-- ============ BODY ============ -->
   <section class="container-content py-14 md:py-20">
+    {%- if page.extra.illustration %}
+    <figure class="mb-12">
+      <img src="{{ page.extra.illustration }}" alt="{{ page.extra.illustration_alt | default(value=page.title) }}"
+        class="mx-auto block max-h-[78vh] w-auto max-w-full rounded-2xl border border-mid-gray/50 shadow-2xl shadow-black/60"
+        loading="lazy" decoding="async">
+      {%- if page.extra.illustration_alt %}
+      <figcaption class="mt-3 text-center text-xs text-mid-gray">{{ page.extra.illustration_alt }}</figcaption>
+      {%- endif %}
+    </figure>
+    {%- endif %}
     {%- if page.extra.anchor %}
     <blockquote class="mb-12 border-l-2 border-gold pl-6 font-serif text-2xl italic leading-snug text-presence">
       {{ page.extra.anchor }}

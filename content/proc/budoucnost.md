@@ -9,6 +9,8 @@ eyebrow = "Pilíř 03"
 lead = "Budoucnost není místo, kam jednou dorazíme. Je to směr, kterým jdeme dnes. A směr si vybíráme každé ráno znovu."
 image = "/og/social/astronautiste-budoucnost-neni-misto-je-to-smer.jpg"
 og_image = "/og/pages/proc-budoucnost.png"
+illustration = "/illustrations/proc-budoucnost.jpg"
+illustration_alt = "Budoucnost není místo — je to směr."
 og_image_alt = "Cesta vzhůru ke hvězdám, budoucnost jako směr a plán"
 anchor = "„Budoucnost není sci-fi. Je to plán.“"
 +++

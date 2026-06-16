@@ -9,6 +9,8 @@ eyebrow = "Pilíř 02"
 lead = "Zvídavost je palivo. Vzdělání je síla. Bez paliva ten nejlepší motor jen stojí na místě a vypadá hezky."
 image = "/og/social/astronautiste-zvedavost-je-palivo-vzdelani-je-sila.jpg"
 og_image = "/og/pages/proc-zvidavost.png"
+illustration = "/illustrations/proc-zvidavost.jpg"
+illustration_alt = "Zvídavost je jiskra — dítě a galaxie ve sklenici."
 og_image_alt = "Motiv zvídavosti jako paliva a vzdělání jako síly"
 anchor = "„Každý velký objev začal otázkou ‚Proč?‘.“"
 +++
