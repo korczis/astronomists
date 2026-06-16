@@ -15,10 +15,13 @@
     "test:e2e:live": "playwright test --config=playwright.live.config.ts"
   },
   "devDependencies": {
+    "@alpinejs/intersect": "^3.14.8",
     "@playwright/test": "^1.49.0",
     "@tailwindcss/typography": "^0.5.19",
+    "alpinejs": "^3.14.8",
     "autoprefixer": "^10.4.20",
     "flowbite": "^2.5.2",
+    "p5": "^1.11.2",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }

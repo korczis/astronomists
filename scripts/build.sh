@@ -17,9 +17,12 @@ OUTPUT_DIR="${OUTPUT_DIR:-public}"
 echo "==> [1/4] Tailwind + Flowbite CSS"
 npx tailwindcss -i ./styles/input.css -o ./static/css/main.css --minify
 
-echo "==> [2/4] Vendor Flowbite JS"
+echo "==> [2/4] Vendor JS (Flowbite + p5 + Alpine)"
 mkdir -p static/js
 cp node_modules/flowbite/dist/flowbite.min.js static/js/flowbite.min.js
+cp node_modules/p5/lib/p5.min.js static/js/p5.min.js
+cp node_modules/alpinejs/dist/cdn.min.js static/js/alpine.min.js
+cp node_modules/@alpinejs/intersect/dist/cdn.min.js static/js/alpine-intersect.min.js
 
 echo "==> [3/4] Zola build (output: ${OUTPUT_DIR})"
 if [ -n "${BASE_URL:-}" ]; then

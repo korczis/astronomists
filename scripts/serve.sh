@@ -15,9 +15,12 @@ cd "$ROOT"
 PORT="${PORT:-1111}"
 IFACE="${IFACE:-127.0.0.1}"
 
-# Vendor Flowbite JS once (served from static/js/).
+# Vendor JS once (served from static/js/): Flowbite + p5 + Alpine (+ intersect).
 mkdir -p static/js
 cp node_modules/flowbite/dist/flowbite.min.js static/js/flowbite.min.js
+cp node_modules/p5/lib/p5.min.js static/js/p5.min.js
+cp node_modules/alpinejs/dist/cdn.min.js static/js/alpine.min.js
+cp node_modules/@alpinejs/intersect/dist/cdn.min.js static/js/alpine-intersect.min.js
 
 # Tailwind/Flowbite CSS in watch mode (rebuilds main.css on template/content edits).
 npx tailwindcss -i ./styles/input.css -o ./static/css/main.css --watch >/tmp/astro-tailwind-watch.log 2>&1 &
