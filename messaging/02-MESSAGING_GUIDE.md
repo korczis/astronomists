@@ -10,7 +10,7 @@ Three-tier messaging hierarchy: **Core Message** → **Pillars** → **Tactical 
 
 ### Primary Message
 
-**"Myšlet Hvězd, Jednat Vědecky"**
+**"Myslíme na hvězdy, jednáme vědecky"**
 
 **Translation**: "Think Stars, Act Scientifically"
 

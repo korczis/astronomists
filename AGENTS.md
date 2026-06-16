@@ -1,6 +1,6 @@
-# CLAUDE.md — Astronomists (Astronautisté Brand)
+# AGENTS.md — Astronomists (Astronautisté Brand)
 
-> 🇨🇿 Konfigurace projektu pro práci s Claude Code. CZ rationale + EN technical body.
+> 🇨🇿 Konfigurace projektu pro práci s Codex. CZ rationale + EN technical body.
 > Injektováno z Prismatic Platform AIAD (`/inject`, Core bootstrap) — 2026-06-15.
 
 ## Project type
@@ -31,7 +31,7 @@ astronomists/
 ├── assets/           # asset inventory
 ├── injection-config/ # interní deployment dokumentace (NEpublikuje se na Pages)
 ├── .aiad/            # AIAD infrastruktura (agents, manifest)
-├── .claude/          # protocols, session-context, agent registry
+├── .Codex/          # protocols, session-context, agent registry
 └── .githooks/        # portable pre-commit (docs quality gates)
 ```
 
@@ -58,7 +58,7 @@ Fonty: `Inter` (sans), `Georgia` (serif).
 - **GitHub Pages:** site se staví z větve `gh-pages` (root). Master a gh-pages jsou
   oddělené; obsah na Pages se synchronizuje vědomě, ne automaticky z master.
 
-## Protocols (`.claude/protocols/`)
+## Protocols (`.Codex/protocols/`)
 
 Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 
@@ -70,13 +70,13 @@ Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 ## Agents (`.aiad/agents/`)
 
 - `commit-coordinator` — koordinace commitů (conventional format + co-author footer).
-- `session-context-synthesizer` — syntéza session kontextu do `.claude/session-context/`.
+- `session-context-synthesizer` — syntéza session kontextu do `.Codex/session-context/`.
 
-Katalog: `.claude/AGENT_REGISTRY.md`.
+Katalog: `.Codex/AGENT_REGISTRY.md`.
 
 ## Git workflow
 
-- Conventional commits: `type(scope): description` + Claude co-author footer.
+- Conventional commits: `type(scope): description` + Codex co-author footer.
 - Branches: `feature/`, `fix/`, `refactor/` prefixy.
 - Nikdy `--no-verify`; po selhání hooku vytvoř NOVÝ commit (neamenduj).
 - `git config core.hooksPath .githooks` aktivuje portable pre-commit.

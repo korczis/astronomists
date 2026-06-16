@@ -73,7 +73,7 @@ Astronautisté je moderní, analyticky zaměřená značka zaměřená na průni
 
 ## Messaging Pillars
 
-### Core Message: "Myšlet Hvězd, Jednat Vědecky"
+### Core Message: "Myslíme na hvězdy, jednáme vědecky"
 Jeden vědeckou řigorozitou a technologickou silou řešíme problémy, které se zdají mimo dosah. Hvězdy nejsou limit — jsou inspirace.
 
 ### Supporting Messages
