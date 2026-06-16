@@ -28,11 +28,11 @@ The site deploys via GitHub Actions on push to `master`
 1. Confirm with the user which source they want on `master` (merge the current feature
    branch, or they push it themselves for PR review). Do not merge to `master` without
    explicit confirmation.
-2. The push to `master` is gated by `block-git-push.sh` and pushing the default branch
-   triggers a production deploy — prefix it with the sentinel and only after the
-   confirmation in step 1:
+2. The push to `master` is gated by `block-git-push.sh`. The default branch carries
+   **deploy authority** — the plain `CLAUDE_PUSH_SKILL=1` is rejected for master; only the
+   stronger `CLAUDE_DEPLOY_SKILL=1` is accepted. Push only after the confirmation in step 1:
    ```bash
-   CLAUDE_PUSH_SKILL=1 git push origin <feature>:master   # fast-forward; or push after merge
+   CLAUDE_DEPLOY_SKILL=1 git push origin <feature>:master   # fast-forward; or push after merge
    ```
 3. Report the Actions run URL (`gh run watch` / `gh run list`) and that gh-pages updates
    when it goes green.
@@ -56,12 +56,12 @@ Use when CI is unavailable or an immediate push is needed.
    CLAUDE_COMMIT_SKILL=1 git -C /tmp/astro-ghp commit -q -m "deploy: publish site $(git rev-parse --short HEAD)
 
    Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>"
-   CLAUDE_PUSH_SKILL=1 git -C /tmp/astro-ghp push origin gh-pages-deploy:gh-pages
+   CLAUDE_DEPLOY_SKILL=1 git -C /tmp/astro-ghp push origin gh-pages-deploy:gh-pages
    git worktree remove --force /tmp/astro-ghp
    ```
    (Both the commit and the push need their sentinels — `block-git-commit.sh` and
-   `block-git-push.sh` apply in worktrees too: `CLAUDE_COMMIT_SKILL=1` for the commit,
-   `CLAUDE_PUSH_SKILL=1` for the push.)
+   `block-git-push.sh` apply in worktrees too: `CLAUDE_COMMIT_SKILL=1` for the commit and
+   `CLAUDE_DEPLOY_SKILL=1` for the production push. `/deploy` always uses deploy authority.)
 4. Never `--force` onto `gh-pages` except the controlled push above; never delete history
    beyond what `force_orphan` parity requires.
 
