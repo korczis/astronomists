@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{#
+  detail.html — leaf detail page (motif, slogan, audience, pillar, program item).
+  Front-matter contract ([extra]): eyebrow, lead, image, og_image, og_image_alt, anchor, weight.
+  Breadcrumb + prev/next derive from the parent section automatically.
+#}
+
+{% block content %}
+{%- set parent = get_section(path=page.ancestors | last) -%}
+{%- set hero_image = page.extra.image | default(value=page.extra.og_image) -%}
+<article>
+  <!-- ============ HERO ============ -->
+  <section class="relative overflow-hidden bg-cosmic">
+    {%- if hero_image %}
+    <div class="absolute inset-0 z-0" aria-hidden="true">
+      <img src="{{ hero_image }}" alt="" class="h-full w-full object-cover opacity-25">
+      <div class="absolute inset-0 bg-gradient-to-t from-void via-void/80 to-void/40"></div>
+    </div>
+    {%- endif %}
+    <div class="container-content relative z-10 py-16 md:py-24">
+      <nav aria-label="Drobečková navigace" class="flex flex-wrap items-center gap-2 text-xs text-mid-gray">
+        <a href="/" class="hover:text-gold">Domů</a>
+        <span aria-hidden="true">/</span>
+        <a href="{{ parent.path }}" class="hover:text-gold">{{ parent.title }}</a>
+        <span aria-hidden="true">/</span>
+        <span class="text-light-gray">{{ page.title }}</span>
+      </nav>
+      {%- if page.extra.eyebrow %}
+      <span class="eyebrow mt-6">{{ page.extra.eyebrow }}</span>
+      {%- endif %}
+      <h1 class="mt-3 max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight text-presence sm:text-5xl">
+        {{ page.title }}
+      </h1>
+      <div class="signal-rule mt-6"></div>
+      {%- if page.extra.lead %}
+      <p class="mt-6 max-w-2xl text-lg text-light-gray">{{ page.extra.lead }}</p>
+      {%- endif %}
+    </div>
+  </section>
+
+  <!-- ============ BODY ============ -->
+  <section class="container-content py-14 md:py-20">
+    {%- if page.extra.anchor %}
+    <blockquote class="mb-12 border-l-2 border-gold pl-6 font-serif text-2xl italic leading-snug text-presence">
+      {{ page.extra.anchor }}
+    </blockquote>
+    {%- endif %}
+
+    <div class="doc">
+      {{ page.content | safe }}
+    </div>
+
+    <!-- ============ PREV / NEXT ============ -->
+    {%- if page.lower or page.higher %}
+    <nav aria-label="Další v sekci" class="mt-16 grid gap-4 border-t border-mid-gray/40 pt-8 sm:grid-cols-2">
+      <div>
+        {%- if page.lower %}
+        <a href="{{ page.lower.path }}" class="group block rounded-xl border border-mid-gray/60 bg-deep-gray p-5 transition hover:border-gold">
+          <span class="text-xs uppercase tracking-[0.18em] text-mid-gray">← Předchozí</span>
+          <span class="mt-1 block font-semibold text-presence group-hover:text-gold">{{ page.lower.title }}</span>
+        </a>
+        {%- endif %}
+      </div>
+      <div class="sm:text-right">
+        {%- if page.higher %}
+        <a href="{{ page.higher.path }}" class="group block rounded-xl border border-mid-gray/60 bg-deep-gray p-5 transition hover:border-gold">
+          <span class="text-xs uppercase tracking-[0.18em] text-mid-gray">Další →</span>
+          <span class="mt-1 block font-semibold text-presence group-hover:text-gold">{{ page.higher.title }}</span>
+        </a>
+        {%- endif %}
+      </div>
+    </nav>
+    {%- endif %}
+
+    <!-- ============ FOOTER NAV + CTA ============ -->
+    <div class="mt-12 flex flex-wrap items-center gap-4">
+      <a href="{{ parent.path }}" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
+        ← {{ parent.title }}
+      </a>
+      <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautist%C3%A9%20%E2%80%94%20p%C5%99id%C3%A1v%C3%A1m%20se"
+        class="inline-flex items-center gap-2 rounded-lg bg-presence px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-void transition hover:bg-gold">
+        Přidej se
+      </a>
+    </div>
+  </section>
+</article>
+{% endblock content %}

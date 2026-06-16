@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{#
+  hub.html — section hub listing its child pages as preview cards.
+  Section front-matter ([extra]): eyebrow, lead, image, og_image, og_image_alt.
+  Child pages sorted by `sort_by` (weight). Each card uses child title/description/extra.
+#}
+
+{% block content %}
+<!-- ============ HERO ============ -->
+<section class="relative overflow-hidden bg-cosmic">
+  {%- if section.extra.image %}
+  <div class="absolute inset-0 z-0" aria-hidden="true">
+    <img src="{{ section.extra.image }}" alt="" class="h-full w-full object-cover opacity-20">
+    <div class="absolute inset-0 bg-gradient-to-t from-void via-void/80 to-void/40"></div>
+  </div>
+  {%- endif %}
+  <div class="container-content relative z-10 py-16 md:py-24">
+    <nav aria-label="Drobečková navigace" class="flex flex-wrap items-center gap-2 text-xs text-mid-gray">
+      <a href="/" class="hover:text-gold">Domů</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-light-gray">{{ section.title }}</span>
+    </nav>
+    {%- if section.extra.eyebrow %}
+    <span class="eyebrow mt-6">{{ section.extra.eyebrow }}</span>
+    {%- endif %}
+    <h1 class="mt-3 max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight text-presence sm:text-5xl">
+      {{ section.title }}
+    </h1>
+    <div class="signal-rule mt-6"></div>
+    {%- if section.extra.lead %}
+    <p class="mt-6 max-w-2xl text-lg text-light-gray">{{ section.extra.lead }}</p>
+    {%- endif %}
+  </div>
+</section>
+
+<!-- ============ INTRO (section body, optional) ============ -->
+{%- if section.content %}
+<section class="container-content py-12">
+  <div class="doc">{{ section.content | safe }}</div>
+</section>
+{%- endif %}
+
+<!-- ============ CARD GRID ============ -->
+<section class="container-content pb-20 {% if not section.content %}pt-12{% endif %}">
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {%- for p in section.pages %}
+    <a href="{{ p.path }}"
+      x-data="{ s: false }" x-intersect.once="s = true" :class="{ 'is-in': s }"
+      class="reveal group flex flex-col overflow-hidden rounded-2xl border border-mid-gray/70 bg-deep-gray transition duration-200 hover:-translate-y-1 hover:border-gold">
+      {%- set thumb = p.extra.image | default(value=p.extra.og_image) %}
+      {%- if thumb %}
+      <div class="aspect-[1200/630] overflow-hidden bg-void">
+        <img src="{{ thumb }}" alt="{{ p.extra.og_image_alt | default(value=p.title) }}" loading="lazy"
+          class="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-105 group-hover:opacity-100">
+      </div>
+      {%- endif %}
+      <div class="flex flex-1 flex-col gap-3 p-6">
+        {%- if p.extra.eyebrow %}
+        <span class="text-xs font-semibold uppercase tracking-[0.18em] text-gold">{{ p.extra.eyebrow }}</span>
+        {%- endif %}
+        <h3 class="text-xl font-bold text-presence group-hover:text-gold">{{ p.title }}</h3>
+        {%- if p.description %}
+        <p class="text-sm text-light-gray">{{ p.description }}</p>
+        {%- endif %}
+        <span class="mt-auto pt-2 text-sm font-medium text-gold">Detail →</span>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+
+  <div class="mt-12">
+    <a href="/" class="inline-flex items-center rounded-lg border-2 border-mid-gray px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-presence transition hover:border-gold">
+      ← Domů
+    </a>
+  </div>
+</section>
+{% endblock content %}

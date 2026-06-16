@@ -1,4 +1,4 @@
-<nav class="sticky top-0 z-30 border-b border-mid-gray/60 bg-void/85 backdrop-blur-md">
+<nav aria-label="Hlavní navigace" class="sticky top-0 z-30 border-b border-mid-gray/60 bg-void/85 backdrop-blur-md">
   <div class="container-content flex flex-wrap items-center justify-between gap-3 py-3.5">
     <a href="/" class="flex items-center gap-2.5">
       <span class="h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_12px_#d4a574]"></span>
@@ -17,13 +17,14 @@
 
     <div class="hidden w-full md:block md:w-auto" id="nav-menu">
       <ul class="mt-3 flex flex-col gap-1 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7">
-        <li><a href="#proc" class="block py-1.5 text-light-gray hover:text-gold">Proč</a></li>
-        <li><a href="#manifest" class="block py-1.5 text-light-gray hover:text-gold">Manifest</a></li>
-        <li><a href="#pro-koho" class="block py-1.5 text-light-gray hover:text-gold">Pro&nbsp;koho</a></li>
-        <li><a href="#motivy" class="block py-1.5 text-light-gray hover:text-gold">Motivy</a></li>
-        <li><a href="#brand" class="block py-1.5 text-light-gray hover:text-gold">Brand&nbsp;&amp;&nbsp;Docs</a></li>
+        <li><a href="/proc/" class="block py-1.5 text-light-gray hover:text-gold">Proč</a></li>
+        <li><a href="/manifest/" class="block py-1.5 text-light-gray hover:text-gold">Manifest</a></li>
+        <li><a href="/pro-koho/" class="block py-1.5 text-light-gray hover:text-gold">Pro&nbsp;koho</a></li>
+        <li><a href="/motivy/" class="block py-1.5 text-light-gray hover:text-gold">Motivy</a></li>
+        <li><a href="/kampan/" class="block py-1.5 text-light-gray hover:text-gold">Kampaň</a></li>
+        <li><a href="/brand/" class="block py-1.5 text-light-gray hover:text-gold">Brand&nbsp;&amp;&nbsp;Docs</a></li>
         <li>
-          <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautist%C3%A9%20%E2%80%94%20p%C5%99id%C3%A1v%C3%A1m%20se"
+          <a href="/pridej-se/"
             class="mt-1 inline-flex items-center rounded-lg bg-presence px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-void transition hover:bg-gold md:mt-0">
             Přidej se
           </a>

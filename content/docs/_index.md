@@ -8,6 +8,10 @@ template = "section.html"
 Kompletní **Astronautisté brand package** je uložen ve zdrojovém repozitáři a verzovaný v gitu.
 Tato stránka je rozcestník; jednotlivé dokumenty si prohlédneš přímo na GitHubu.
 
+## Na webu
+
+- [**Social / OG Kit**](/docs/social-kit/) — náhledy pro sdílení (Open Graph), galerie, per-page override a brand QA
+
 ## Brand book
 
 - [Brand Book](https://github.com/korczis/astronomists/blob/master/brand-book/00-BRAND_BOOK.md) — esence značky, pilíře, narativní architektura
