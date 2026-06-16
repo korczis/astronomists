@@ -8,7 +8,7 @@
 
 {% block content %}
 {%- set parent = get_section(path=page.ancestors | last) -%}
-{%- set hero_image = page.extra.image | default(value=page.extra.og_image) -%}
+{%- set hero_image = page.extra.card | default(value = page.extra.og_image | default(value=config.extra.og_image) | replace(from="/og/pages/", to="/og/cards/")) -%}
 <article>
   <!-- ============ HERO ============ -->
   <section class="relative overflow-hidden bg-cosmic">

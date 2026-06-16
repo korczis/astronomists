@@ -82,6 +82,23 @@ test.describe('per-page SEO / OG / social meta', () => {
     }
   });
 
+  test('hub card images are uniform 16:10, object-cover, sized (no stretch / no CLS)', async ({ page }) => {
+    await page.goto('/motivy/');
+    const imgs = page.locator('main section a[href^="/motivy/"] img');
+    const n = await imgs.count();
+    expect(n, 'motif cards present').toBeGreaterThanOrEqual(10);
+    for (let i = 0; i < n; i++) {
+      const im = imgs.nth(i);
+      await expect(im, `card img ${i} width`).toHaveAttribute('width', '1280');
+      await expect(im, `card img ${i} height`).toHaveAttribute('height', '800');
+      expect(await im.getAttribute('class'), `card img ${i} object-cover`).toContain('object-cover');
+      const box = await im.boundingBox();
+      expect(box, `card img ${i} box`).toBeTruthy();
+      // rendered ratio must be ~16:10 (1.6) — proves no stretch/letterbox
+      expect(Math.abs(box!.width / box!.height - 1.6), `card img ${i} AR`).toBeLessThan(0.06);
+    }
+  });
+
   test('every hub card links to a page that resolves', async ({ page }) => {
     const hubs = ['/proc/', '/manifest/', '/pro-koho/', '/motivy/', '/pridej-se/', '/kampan/'];
     for (const hub of hubs) {
