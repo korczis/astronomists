@@ -8,10 +8,11 @@
 
 {% block content %}
 <!-- ============ HERO ============ -->
+{%- set hero_image = section.extra.card | default(value = section.extra.og_image | default(value=config.extra.og_image) | replace(from="/og/pages/", to="/og/cards/")) -%}
 <section class="relative overflow-hidden bg-cosmic">
-  {%- if section.extra.image %}
+  {%- if hero_image %}
   <div class="absolute inset-0 z-0" aria-hidden="true">
-    <img src="{{ section.extra.image }}" alt="" class="h-full w-full object-cover opacity-20">
+    <img src="{{ hero_image }}" alt="" class="h-full w-full object-cover opacity-25">
     <div class="absolute inset-0 bg-gradient-to-t from-void via-void/80 to-void/40"></div>
   </div>
   {%- endif %}
