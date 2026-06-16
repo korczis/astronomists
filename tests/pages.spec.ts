@@ -63,6 +63,14 @@ test.describe('per-page SEO / OG / social meta', () => {
     await expect(page.locator('a[href="/proc/perspektiva/"]')).toHaveCount(1);
   });
 
+  test('Proč pillar articles open with an intro illustration from /illustrations/', async ({ page }) => {
+    for (const slug of ['perspektiva', 'zvidavost', 'budoucnost']) {
+      await page.goto(`/proc/${slug}/`);
+      const fig = page.locator(`main figure img[src="/illustrations/proc-${slug}.jpg"]`);
+      await expect(fig, `${slug} intro illustration`).toBeVisible();
+    }
+  });
+
   test('detail page has breadcrumb back to its hub', async ({ page }) => {
     await page.goto('/motivy/pale-blue-dot/');
     const crumb = page.locator('nav[aria-label="Drobečková navigace"]');
@@ -112,6 +120,31 @@ test.describe('per-page SEO / OG / social meta', () => {
         const r = await page.goto(c);
         expect(r!.status(), `${hub} card ${c}`).toBe(200);
       }
+    }
+  });
+});
+
+test.describe('detail hero images decode (no broken images)', () => {
+  // Each /pro-koho/*/ detail must show a hero image that actually loads — the same
+  // broken-image guard applied to the galerie carousel. Routes discovered from the hub.
+  test('every /pro-koho/*/ hero image decodes', async ({ page }) => {
+    await page.goto('/pro-koho/');
+    const routes: string[] = await page.locator('main a[href^="/pro-koho/"]').evaluateAll(
+      els => [...new Set(els
+        .map(e => (e as HTMLAnchorElement).getAttribute('href')!)
+        .filter(h => h !== '/pro-koho/'))]);
+    expect(routes.length, 'pro-koho lists detail pages').toBeGreaterThanOrEqual(4);
+
+    for (const route of routes) {
+      await page.goto(route);
+      const hero = page.locator('article img').first();
+      await expect(hero, `${route} has a hero image`).toHaveCount(1);
+      // src resolves (200) and the bitmap actually decoded.
+      const src = await hero.getAttribute('src');
+      expect(src, `${route} hero src`).toBeTruthy();
+      await expect(hero, `${route} hero complete`).toHaveJSProperty('complete', true);
+      expect(await hero.evaluate((i: HTMLImageElement) => i.naturalWidth),
+        `${route} hero decoded (naturalWidth>0)`).toBeGreaterThan(0);
     }
   });
 });
