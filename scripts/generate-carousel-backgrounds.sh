@@ -17,4 +17,5 @@ for f in "$SRC"/astronautiste-*.jpg; do
   magick "$f" -resize "${MAXW}x${MAXW}>" -strip -quality "$Q" "$OUT/$(basename "$f")"
   n=$((n+1))
 done
+[ "$n" -gt 0 ] || { echo "ERROR: žádný zdroj nesedí na $SRC/astronautiste-*.jpg" >&2; exit 1; }
 echo "→ $n background variant → static/backgrounds/carousel/ ($(du -sh "$OUT" | cut -f1))"

@@ -47,6 +47,10 @@ Tyto vzory jsou ve zdroji **zakázané** (pre-commit je blokne):
 - `@plugin "flowbite"` / `@plugin 'flowbite'`   ← v4 CSS-first plugin
 - `@import "tailwindcss"`   ← v4 entry (my používáme `@tailwind base/components/utilities`)
 - `@theme { ... }`   ← v4 theme config (my používáme `theme.extend` v `tailwind.config.js`)
+- `@utility …` · `@variant …` · `@reference …` · `@source "…"`   ← další v4 CSS-first direktivy
+
+> Tento seznam je zdroj pravdy a musí být v sync s regexem ve `scripts/check-doctrines.sh`
+> a `.githooks/pre-commit` (Gate 5). Při úpravě jednoho aktualizuj všechny tři.
 
 ## Upgrade na v4 (vědomé rozhodnutí, ne omylem)
 

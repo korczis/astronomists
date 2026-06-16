@@ -6,22 +6,31 @@
 
 {% block content %}
 {% set d = load_data(path="data/og-previews.toml") %}
-{% set campaign = d.groups | filter(attribute="id", value="campaign") | first %}
+{% set campaign = d.groups | filter(attribute="id", value="campaign") | first | default(value=false) %}
 
 <section class="relative min-h-[100svh] overflow-hidden">
   <!-- ===== Flowbite carousel: posterová pozadí ===== -->
   <div id="poster-carousel" class="absolute inset-0 z-0" data-carousel="slide"
     role="region" aria-roledescription="kolotoč" aria-label="Kampaňové plakáty Astronautisté na pozadí">
     <div class="relative h-full w-full overflow-hidden">
-      {% for it in campaign.items %}
-      <div class="hidden duration-1000 ease-in-out" data-carousel-item{% if loop.first %}="active"{% endif %}>
+      {% if campaign %}{% for it in campaign.items %}
+      {# first slide keeps no `hidden` → visible without JS; Flowbite hides the rest on init #}
+      <div class="{% if not loop.first %}hidden {% endif %}duration-1000 ease-in-out" data-carousel-item{% if loop.first %}="active"{% endif %}>
         <img src="/backgrounds/carousel/{{ it.slug }}.jpg" alt="{{ it.title }}"
           class="absolute inset-0 h-full w-full object-cover"
           {% if not loop.first %}loading="lazy" {% endif %}decoding="async">
       </div>
-      {% endfor %}
+      {% endfor %}{% endif %}
     </div>
   </div>
+
+  {# prefers-reduced-motion: switch to manual (no auto-advance) before Flowbite auto-inits #}
+  <script>
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var pc = document.getElementById('poster-carousel');
+      if (pc) pc.setAttribute('data-carousel', 'static');
+    }
+  </script>
 
   <!-- ===== brand overlay (čitelnost textu) ===== -->
   <div class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-void via-void/85 to-void/55"></div>
@@ -50,12 +59,12 @@
 
   <!-- ===== indikátory (Flowbite data-carousel-slide-to) ===== -->
   <div class="absolute bottom-6 left-1/2 z-30 flex max-w-[90vw] -translate-x-1/2 flex-wrap justify-center gap-2.5">
-    {% for it in campaign.items %}
+    {% if campaign %}{% for it in campaign.items %}
     <button type="button" class="h-2.5 w-2.5 rounded-full bg-presence/40 transition hover:bg-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
       aria-current="{% if loop.first %}true{% else %}false{% endif %}"
       aria-label="Plakát {{ loop.index }}: {{ it.title }}"
       data-carousel-slide-to="{{ loop.index0 }}"></button>
-    {% endfor %}
+    {% endfor %}{% endif %}
   </div>
 
   <!-- ===== prev / next (Flowbite data-carousel-prev/next) ===== -->

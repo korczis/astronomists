@@ -41,17 +41,24 @@ if [ -n "$markers" ]; then
 fi
 
 # --- Gate 5: Flowbite v2 / Tailwind v3 stack doctrine ---
-# Policy: .aiad/policies/flowbite-stack.policy.md
-# Scans only build SOURCE (css/js/html/config); .md docs are EXEMPT (they document the rules).
+# Policy: .aiad/policies/flowbite-stack.policy.md  (V4 pattern kept in sync with scripts/check-doctrines.sh)
+# Scans only build SOURCE (css/js/ts/html/config); .md docs are EXEMPT (they document the rules).
+V4='@custom-variant[[:space:]]+dark|@plugin[[:space:]]+["'\'']flowbite|@import[[:space:]]+["'\'']tailwindcss|@theme[[:space:]]*\{|@utility[[:space:]]|@variant[[:space:]]|@reference[[:space:]]|@source[[:space:]]+["'\'']'
 src=$(printf '%s\n' "$staged" \
-  | grep -E '\.(css|js|html)$|(^|/)(tailwind|postcss)\.config\.js$|(^|/)package\.json$' \
+  | grep -E '\.(css|js|ts|mjs|cjs|html)$|(^|/)(tailwind|postcss)\.config\.(js|ts|mjs|cjs)$|(^|/)package\.json$' \
   | grep -vE '\.min\.js$' || true)
 if [ -n "$src" ]; then
-  v4=$(git diff --cached -U0 -- $src 2>/dev/null | grep -E '^\+' \
-    | grep -E '@custom-variant[[:space:]]+dark|@plugin[[:space:]]+["'\'']flowbite|@import[[:space:]]+["'\'']tailwindcss|@theme[[:space:]]*\{' || true)
+  v4=""
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    m=$(git diff --cached -U0 -- "$f" 2>/dev/null | grep -E '^\+' | grep -nE "$V4" || true)
+    [ -n "$m" ] && v4="${v4}${f}: ${m}"$'\n'
+  done <<EOF
+$src
+EOF
   if [ -n "$v4" ]; then
     echo "BLOCKED: Tailwind v4 / Flowbite v4 syntax in source — projekt je Flowbite v2 / Tailwind v3."
-    printf '%s\n' "$v4"
+    printf '%s' "$v4"
     echo "  doctrine: .aiad/policies/flowbite-stack.policy.md"
     echo "  use: @tailwind base/components/utilities; darkMode:'class'; require('flowbite/plugin')"
     fail=1

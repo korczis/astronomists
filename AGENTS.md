@@ -31,7 +31,7 @@ astronomists/
 ├── assets/           # asset inventory
 ├── injection-config/ # interní deployment dokumentace (NEpublikuje se na Pages)
 ├── .aiad/            # AIAD infrastruktura (agents, manifest)
-├── .Codex/          # protocols, session-context, agent registry
+├── .claude/          # protocols, session-context, agent registry
 └── .githooks/        # portable pre-commit (docs quality gates)
 ```
 
@@ -75,7 +75,7 @@ Zdroj pravdy: **`.aiad/policies/`** (rejstřík `.aiad/policies/INDEX.md`). Tent
   `flowbite.com` `llms.txt` je už v4 → **neaplikovat sem**. Web je **dark-only**.
 - Další gaty: metadata hygiene, CZE jazyk (advisory), secrets, merge markery.
 
-## Protocols (`.Codex/protocols/`)
+## Protocols (`.claude/protocols/`)
 
 Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 
@@ -87,9 +87,9 @@ Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 ## Agents (`.aiad/agents/`)
 
 - `commit-coordinator` — koordinace commitů (conventional format + co-author footer).
-- `session-context-synthesizer` — syntéza session kontextu do `.Codex/session-context/`.
+- `session-context-synthesizer` — syntéza session kontextu do `.claude/session-context/`.
 
-Katalog: `.Codex/AGENT_REGISTRY.md`.
+Katalog: `.claude/AGENT_REGISTRY.md`.
 
 ## Git workflow
 
