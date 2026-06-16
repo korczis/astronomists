@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Zola
         uses: taiki-e/install-action@15449e3094499af05d8d964a1c884208e4b8b595 # v2
@@ -28,7 +28,7 @@ jobs:
           tool: zola@0.22.1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "20"
           cache: "npm"
@@ -50,25 +50,27 @@ jobs:
 
       - name: Upload Playwright report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
 
       - name: Upload built site
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: public
           path: public/
           retention-days: 1
+          # 🇨🇿 jinak vynechá dotfiles → .well-known/, .nojekyll vypadnou z deploye.
+          include-hidden-files: true
 
   deploy:
     needs: build-check
     runs-on: ubuntu-latest
     steps:
       - name: Download built site
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: public
           path: public
