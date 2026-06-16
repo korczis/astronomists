@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{# Flowbite Carousel (v2) jako full-viewport pozadí. Auto-init přes vendorovaný
+   flowbite.min.js (DOMContentLoaded). Doctrine: .aiad/policies/flowbite-stack.policy.md
+   — pouze data-attributes + Tailwind v3, žádná v4 CSS-first syntax. #}
+
+{% block content %}
+{% set d = load_data(path="data/og-previews.toml") %}
+{% set campaign = d.groups | filter(attribute="id", value="campaign") | first | default(value=false) %}
+
+<section class="relative min-h-[100svh] overflow-hidden">
+  <!-- ===== Flowbite carousel: posterová pozadí ===== -->
+  <div id="poster-carousel" class="absolute inset-0 z-0" data-carousel="slide"
+    role="region" aria-roledescription="kolotoč" aria-label="Kampaňové plakáty Astronautisté na pozadí">
+    <div class="relative h-full w-full overflow-hidden">
+      {% if campaign %}{% for it in campaign.items %}
+      {# first slide keeps no `hidden` → visible without JS; Flowbite hides the rest on init #}
+      <div class="{% if not loop.first %}hidden {% endif %}duration-1000 ease-in-out" data-carousel-item{% if loop.first %}="active"{% endif %}>
+        <img src="/backgrounds/carousel/{{ it.slug }}.jpg" alt="{{ it.title }}"
+          class="absolute inset-0 h-full w-full object-cover"
+          {% if not loop.first %}loading="lazy" {% endif %}decoding="async">
+      </div>
+      {% endfor %}{% endif %}
+    </div>
+  </div>
+
+  {# prefers-reduced-motion: switch to manual (no auto-advance) before Flowbite auto-inits #}
+  <script>
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var pc = document.getElementById('poster-carousel');
+      if (pc) pc.setAttribute('data-carousel', 'static');
+    }
+  </script>
+
+  <!-- ===== brand overlay (čitelnost textu) ===== -->
+  <div class="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-void via-void/85 to-void/55"></div>
+  <div class="pointer-events-none absolute inset-0 z-10 bg-cosmic opacity-70"></div>
+
+  <!-- ===== obsah přes pozadím ===== -->
+  <div class="relative z-20 container-content flex min-h-[100svh] flex-col justify-center py-28">
+    <p class="eyebrow">{{ page.extra.eyebrow | default(value="Galerie") }}</p>
+    <h1 class="mt-4 max-w-3xl text-4xl font-extrabold leading-[1.04] tracking-tight text-presence sm:text-6xl">
+      {{ page.title }}
+    </h1>
+    <div class="signal-rule mt-6"></div>
+    {% if page.description %}
+    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-light-gray">{{ page.description }}</p>
+    {% endif %}
+    <p class="mt-8 font-serif text-xl italic text-gold/90">{{ config.extra.tagline_cs }}</p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="/kampan/" class="inline-flex items-center rounded-lg bg-presence px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-void transition hover:bg-gold">
+        Celá kampaň
+      </a>
+      <a href="/docs/social-kit/" class="inline-flex items-center rounded-lg border border-mid-gray/70 px-6 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-light-gray transition hover:border-gold hover:text-gold">
+        Social / OG Kit
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== indikátory (Flowbite data-carousel-slide-to) ===== -->
+  <div class="absolute bottom-6 left-1/2 z-30 flex max-w-[90vw] -translate-x-1/2 flex-wrap justify-center gap-2.5">
+    {% if campaign %}{% for it in campaign.items %}
+    <button type="button" class="h-2.5 w-2.5 rounded-full bg-presence/40 transition hover:bg-gold focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+      aria-current="{% if loop.first %}true{% else %}false{% endif %}"
+      aria-label="Plakát {{ loop.index }}: {{ it.title }}"
+      data-carousel-slide-to="{{ loop.index0 }}"></button>
+    {% endfor %}{% endif %}
+  </div>
+
+  <!-- ===== prev / next (Flowbite data-carousel-prev/next) ===== -->
+  <button type="button" data-carousel-prev
+    class="group absolute left-3 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-void/50 backdrop-blur transition hover:bg-void/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+    <span class="sr-only">Předchozí plakát</span>
+    <svg class="h-5 w-5 text-presence" aria-hidden="true" fill="none" viewBox="0 0 6 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+    </svg>
+  </button>
+  <button type="button" data-carousel-next
+    class="group absolute right-3 top-1/2 z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-void/50 backdrop-blur transition hover:bg-void/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold">
+    <span class="sr-only">Další plakát</span>
+    <svg class="h-5 w-5 text-presence" aria-hidden="true" fill="none" viewBox="0 0 6 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+  </button>
+</section>
+{% endblock content %}

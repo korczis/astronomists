@@ -1,0 +1,390 @@
+{
+  "version": "20260616",
+  "set_id": "pages-10-20260616-zero-g",
+  "brand": "Astronautiste",
+  "mode": "clean_no_text_responsive",
+  "formats": {
+    "background_desktop_16x9": {
+      "path": "background/desktop-16x9-3840x2160",
+      "size": [
+        3840,
+        2160
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "HTML5 page background for desktop and large tablets"
+    },
+    "background_tablet_4x3": {
+      "path": "background/tablet-4x3-2048x1536",
+      "size": [
+        2048,
+        1536
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "HTML5 page background for tablets"
+    },
+    "background_mobile_9x16": {
+      "path": "background/mobile-9x16-1440x2560",
+      "size": [
+        1440,
+        2560
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "HTML5 page background for phones"
+    },
+    "background_mobile_9x16_2x": {
+      "path": "background/mobile-9x16-2160x3840",
+      "size": [
+        2160,
+        3840
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "high-density mobile page background"
+    },
+    "carousel_wide_16x9": {
+      "path": "carousel/wide-16x9-2560x1440",
+      "size": [
+        2560,
+        1440
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "landscape carousel slide"
+    },
+    "carousel_square_1x1": {
+      "path": "carousel/square-1x1-1600x1600",
+      "size": [
+        1600,
+        1600
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "square carousel and social cards"
+    },
+    "carousel_portrait_4x5": {
+      "path": "carousel/portrait-4x5-1600x2000",
+      "size": [
+        1600,
+        2000
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "portrait carousel slide"
+    },
+    "carousel_story_9x16": {
+      "path": "carousel/story-9x16-1080x1920",
+      "size": [
+        1080,
+        1920
+      ],
+      "dpi": 300,
+      "text": false,
+      "purpose": "mobile story carousel slide"
+    }
+  },
+  "topics": [
+    {
+      "index": 1,
+      "slug": "01-orbital-station-observation",
+      "title": "Orbital station observation deck",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-01-orbital-station-observation-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-01-orbital-station-observation-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-01-orbital-station-observation-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-01-orbital-station-observation-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-01-orbital-station-observation-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-01-orbital-station-observation-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-01-orbital-station-observation-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-01-orbital-station-observation-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-01-orbital-station-observation-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-01-orbital-station-observation-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-01-orbital-station-observation-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-01-orbital-station-observation-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-01-orbital-station-observation-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-01-orbital-station-observation-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-01-orbital-station-observation-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-01-orbital-station-observation-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-01-orbital-station-observation-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 2,
+      "slug": "02-eva-spacewalk",
+      "title": "EVA outside orbital station",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-02-eva-spacewalk-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-02-eva-spacewalk-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-02-eva-spacewalk-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-02-eva-spacewalk-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-02-eva-spacewalk-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-02-eva-spacewalk-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-02-eva-spacewalk-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-02-eva-spacewalk-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-02-eva-spacewalk-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-02-eva-spacewalk-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-02-eva-spacewalk-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-02-eva-spacewalk-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-02-eva-spacewalk-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-02-eva-spacewalk-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-02-eva-spacewalk-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-02-eva-spacewalk-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-02-eva-spacewalk-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 3,
+      "slug": "03-station-laboratory",
+      "title": "Microgravity laboratory on station",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-03-station-laboratory-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-03-station-laboratory-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-03-station-laboratory-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-03-station-laboratory-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-03-station-laboratory-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-03-station-laboratory-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-03-station-laboratory-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-03-station-laboratory-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-03-station-laboratory-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-03-station-laboratory-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-03-station-laboratory-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-03-station-laboratory-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-03-station-laboratory-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-03-station-laboratory-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-03-station-laboratory-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-03-station-laboratory-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-03-station-laboratory-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 4,
+      "slug": "04-lunar-transfer",
+      "title": "Lunar transfer spacecraft",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-04-lunar-transfer-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-04-lunar-transfer-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-04-lunar-transfer-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-04-lunar-transfer-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-04-lunar-transfer-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-04-lunar-transfer-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-04-lunar-transfer-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-04-lunar-transfer-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-04-lunar-transfer-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-04-lunar-transfer-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-04-lunar-transfer-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-04-lunar-transfer-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-04-lunar-transfer-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-04-lunar-transfer-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-04-lunar-transfer-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-04-lunar-transfer-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-04-lunar-transfer-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "05-lunar-surface-excursion",
+      "title": "Lunar surface educational excursion",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-05-lunar-surface-excursion-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-05-lunar-surface-excursion-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-05-lunar-surface-excursion-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-05-lunar-surface-excursion-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-05-lunar-surface-excursion-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-05-lunar-surface-excursion-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-05-lunar-surface-excursion-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-05-lunar-surface-excursion-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-05-lunar-surface-excursion-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-05-lunar-surface-excursion-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-05-lunar-surface-excursion-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-05-lunar-surface-excursion-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-05-lunar-surface-excursion-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-05-lunar-surface-excursion-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-05-lunar-surface-excursion-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-05-lunar-surface-excursion-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-05-lunar-surface-excursion-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 6,
+      "slug": "06-orbital-classroom",
+      "title": "Orbital station classroom",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-06-orbital-classroom-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-06-orbital-classroom-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-06-orbital-classroom-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-06-orbital-classroom-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-06-orbital-classroom-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-06-orbital-classroom-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-06-orbital-classroom-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-06-orbital-classroom-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-06-orbital-classroom-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-06-orbital-classroom-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-06-orbital-classroom-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-06-orbital-classroom-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-06-orbital-classroom-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-06-orbital-classroom-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-06-orbital-classroom-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-06-orbital-classroom-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-06-orbital-classroom-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 7,
+      "slug": "07-moon-return-docking",
+      "title": "Return docking after lunar mission",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-07-moon-return-docking-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-07-moon-return-docking-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-07-moon-return-docking-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-07-moon-return-docking-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-07-moon-return-docking-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-07-moon-return-docking-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-07-moon-return-docking-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-07-moon-return-docking-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-07-moon-return-docking-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-07-moon-return-docking-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-07-moon-return-docking-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-07-moon-return-docking-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-07-moon-return-docking-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-07-moon-return-docking-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-07-moon-return-docking-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-07-moon-return-docking-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-07-moon-return-docking-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 8,
+      "slug": "08-orbital-sunrise-corridor",
+      "title": "Orbital sunrise station corridor",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-08-orbital-sunrise-corridor-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-08-orbital-sunrise-corridor-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-08-orbital-sunrise-corridor-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 9,
+      "slug": "09-eva-airlock-prep",
+      "title": "EVA airlock preparation",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-09-eva-airlock-prep-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-09-eva-airlock-prep-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-09-eva-airlock-prep-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-09-eva-airlock-prep-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-09-eva-airlock-prep-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-09-eva-airlock-prep-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-09-eva-airlock-prep-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-09-eva-airlock-prep-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-09-eva-airlock-prep-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-09-eva-airlock-prep-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-09-eva-airlock-prep-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-09-eva-airlock-prep-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-09-eva-airlock-prep-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-09-eva-airlock-prep-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-09-eva-airlock-prep-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-09-eva-airlock-prep-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-09-eva-airlock-prep-carousel-story-9x16-1080x1920.jpg"
+      }
+    },
+    {
+      "index": 10,
+      "slug": "10-mission-control-classroom",
+      "title": "Mission control classroom connected to orbit",
+      "source": "assets/page-backgrounds/pages-10-20260616-zero-g/source-clean/astronautiste-page-bg-10-mission-control-classroom-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "assets": {
+        "background_desktop_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-10-mission-control-classroom-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "static/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-10-mission-control-classroom-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-10-mission-control-classroom-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "static/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-10-mission-control-classroom-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-10-mission-control-classroom-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-10-mission-control-classroom-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-10-mission-control-classroom-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "static/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-10-mission-control-classroom-carousel-story-9x16-1080x1920.jpg"
+      },
+      "urls": {
+        "background_desktop_16x9": "/page-backgrounds/pages-10-20260616-zero-g/background/desktop-16x9-3840x2160/astronautiste-page-bg-10-mission-control-classroom-bg-desktop-16x9-3840x2160.jpg",
+        "background_tablet_4x3": "/page-backgrounds/pages-10-20260616-zero-g/background/tablet-4x3-2048x1536/astronautiste-page-bg-10-mission-control-classroom-bg-tablet-4x3-2048x1536.jpg",
+        "background_mobile_9x16": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-1440x2560/astronautiste-page-bg-10-mission-control-classroom-bg-mobile-9x16-1440x2560.jpg",
+        "background_mobile_9x16_2x": "/page-backgrounds/pages-10-20260616-zero-g/background/mobile-9x16-2160x3840/astronautiste-page-bg-10-mission-control-classroom-bg-mobile-9x16-2160x3840.jpg",
+        "carousel_wide_16x9": "/page-backgrounds/pages-10-20260616-zero-g/carousel/wide-16x9-2560x1440/astronautiste-page-bg-10-mission-control-classroom-carousel-wide-16x9-2560x1440.jpg",
+        "carousel_square_1x1": "/page-backgrounds/pages-10-20260616-zero-g/carousel/square-1x1-1600x1600/astronautiste-page-bg-10-mission-control-classroom-carousel-square-1x1-1600x1600.jpg",
+        "carousel_portrait_4x5": "/page-backgrounds/pages-10-20260616-zero-g/carousel/portrait-4x5-1600x2000/astronautiste-page-bg-10-mission-control-classroom-carousel-portrait-4x5-1600x2000.jpg",
+        "carousel_story_9x16": "/page-backgrounds/pages-10-20260616-zero-g/carousel/story-9x16-1080x1920/astronautiste-page-bg-10-mission-control-classroom-carousel-story-9x16-1080x1920.jpg"
+      }
+    }
+  ]
+}

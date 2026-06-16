@@ -31,7 +31,7 @@ astronomists/
 ├── assets/           # asset inventory
 ├── injection-config/ # interní deployment dokumentace (NEpublikuje se na Pages)
 ├── .aiad/            # AIAD infrastruktura (agents, manifest)
-├── .Codex/          # protocols, session-context, agent registry
+├── .claude/          # protocols, session-context, agent registry
 └── .githooks/        # portable pre-commit (docs quality gates)
 ```
 
@@ -58,7 +58,24 @@ Fonty: `Inter` (sans), `Georgia` (serif).
 - **GitHub Pages:** site se staví z větve `gh-pages` (root). Master a gh-pages jsou
   oddělené; obsah na Pages se synchronizuje vědomě, ne automaticky z master.
 
-## Protocols (`.Codex/protocols/`)
+## Stack & enforced doctrines (MANDATORY)
+
+Web `astronautiste.cz`: **Zola** (static site) + **Tailwind CSS `^3.4.17`** + **Flowbite `^2.5.2`** + Alpine.js.
+Build: `scripts/build.sh` (Tailwind → vendor JS → `zola build` → `zola check`).
+(Pozn.: „není code repo" výše je historické — site build dnes existuje.)
+
+Doktríny jsou **automaticky vynucené** přes `.githooks/pre-commit` (`git config core.hooksPath .githooks`).
+Zdroj pravdy: **`.aiad/policies/`** (rejstřík `.aiad/policies/INDEX.md`). Tento soubor jen odkazuje.
+
+- **Flowbite/Tailwind stack** (STRICT — `.aiad/policies/flowbite-stack.policy.md`):
+  projekt je Flowbite **v2** / Tailwind **v3** (`tailwind.config.js`, `darkMode:'class'`,
+  `require('flowbite/plugin')`, `@tailwind base/components/utilities`). **NEPOUŽÍVEJ**
+  Tailwind-v4 / Flowbite-v4 CSS-first syntax (`@custom-variant`, `@plugin "flowbite"`,
+  `@import "tailwindcss"`, `@theme {}`) — pre-commit **Gate 5 to blokne**.
+  `flowbite.com` `llms.txt` je už v4 → **neaplikovat sem**. Web je **dark-only**.
+- Další gaty: metadata hygiene, CZE jazyk (advisory), secrets, merge markery.
+
+## Protocols (`.claude/protocols/`)
 
 Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 
@@ -70,9 +87,9 @@ Injektované mandatorní protokoly — aplikuj relevantně k docs práci:
 ## Agents (`.aiad/agents/`)
 
 - `commit-coordinator` — koordinace commitů (conventional format + co-author footer).
-- `session-context-synthesizer` — syntéza session kontextu do `.Codex/session-context/`.
+- `session-context-synthesizer` — syntéza session kontextu do `.claude/session-context/`.
 
-Katalog: `.Codex/AGENT_REGISTRY.md`.
+Katalog: `.claude/AGENT_REGISTRY.md`.
 
 ## Git workflow
 

@@ -58,6 +58,24 @@ Fonty: `Inter` (sans), `Georgia` (serif).
 - **GitHub Pages:** site se staví z větve `gh-pages` (root). Master a gh-pages jsou
   oddělené; obsah na Pages se synchronizuje vědomě, ne automaticky z master.
 
+## Stack & enforced doctrines (MANDATORY)
+
+Web `astronautiste.cz`: **Zola** (static site) + **Tailwind CSS `^3.4.17`** + **Flowbite `^2.5.2`** + Alpine.js.
+Build: `scripts/build.sh` (Tailwind → vendor JS → `zola build` → `zola check`).
+
+Doktríny jsou **automaticky vynucené** přes `.githooks/pre-commit` (aktivuj `git config core.hooksPath .githooks`).
+Zdroj pravdy: **`.aiad/policies/`** (rejstřík `.aiad/policies/INDEX.md`). Per-tool rules
+(`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.rules`) jen odkazují, neduplikují.
+
+- **Flowbite/Tailwind stack** (STRICT — `.aiad/policies/flowbite-stack.policy.md`):
+  projekt je Flowbite **v2** / Tailwind **v3** (`tailwind.config.js`, `darkMode:'class'`,
+  `require('flowbite/plugin')`, `@tailwind base/components/utilities`). **NEPOUŽÍVEJ**
+  Tailwind-v4 / Flowbite-v4 CSS-first syntax (`@custom-variant`, `@plugin "flowbite"`,
+  `@import "tailwindcss"`, `@theme {}`) — pre-commit **Gate 5 to blokne**. Pozor:
+  `flowbite.com` `llms.txt`/`llms-full.txt` jsou už v4 → **neaplikovat sem**.
+  Web je **dark-only** (`<html class="dark">`). Interaktivita přes data-attributes + a11y.
+- Další gaty: metadata hygiene (block), CZE jazyk (advisory), secrets (block), merge markery (block).
+
 ## Protocols (`.claude/protocols/`)
 
 Injektované mandatorní protokoly — aplikuj relevantně k docs práci:

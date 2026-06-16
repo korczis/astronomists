@@ -1,0 +1,25 @@
+# Project rules — Astronautisté (astronautiste.cz)
+
+# Auto-loaded by Zed editor (and other agents reading .rules). Source of truth for
+# doctrines: .aiad/policies/  (index: .aiad/policies/INDEX.md). Enforced by .githooks/pre-commit.
+
+Stack: Zola (static site) + Tailwind CSS ^3.4.17 + Flowbite ^2.5.2 + Alpine.js.
+Build: scripts/build.sh. Default reply language: Czech; code identifiers in English.
+
+## STRICT — Flowbite v2 / Tailwind v3 (.aiad/policies/flowbite-stack.policy.md)
+
+This project uses Flowbite v2 / Tailwind v3 (JS config). You MUST:
+- Use tailwind.config.js with darkMode:'class', require('flowbite/plugin'), and
+  @tailwind base/components/utilities in styles/input.css.
+- Use data-attribute components (data-collapse-toggle, etc.) with a11y attributes
+  (aria-controls, aria-expanded, aria-hidden, sr-only). Site is dark-only (<html class="dark">).
+
+You MUST NOT use Tailwind v4 / Flowbite v4 CSS-first syntax:
+  @custom-variant, @plugin "flowbite", @import "tailwindcss", @theme {}
+The pre-commit hook (Gate 5) blocks these in source files.
+
+WARNING: flowbite.com llms.txt / llms-full.txt are now for v4 — DO NOT apply them here.
+
+## Brand
+Canonical tagline: „Myslíme na hvězdy, jednáme vědecky." Brand is always "Astronautisté",
+domain "astronautiste.cz" (never "austronautiste"). Brand voice: messaging/.

@@ -8,10 +8,11 @@
 
 {% block content %}
 <!-- ============ HERO ============ -->
+{%- set hero_image = section.extra.card | default(value = section.extra.og_image | default(value=config.extra.og_image) | replace(from="/og/pages/", to="/og/cards/")) -%}
 <section class="relative overflow-hidden bg-cosmic">
-  {%- if section.extra.image %}
+  {%- if hero_image %}
   <div class="absolute inset-0 z-0" aria-hidden="true">
-    <img src="{{ section.extra.image }}" alt="" class="h-full w-full object-cover opacity-20">
+    <img src="{{ hero_image }}" alt="" class="h-full w-full object-cover opacity-25">
     <div class="absolute inset-0 bg-gradient-to-t from-void via-void/80 to-void/40"></div>
   </div>
   {%- endif %}
@@ -48,23 +49,26 @@
     <a href="{{ p.path }}"
       x-data="{ s: false }" x-intersect.once="s = true" :class="{ 'is-in': s }"
       class="reveal group flex flex-col overflow-hidden rounded-2xl border border-mid-gray/70 bg-deep-gray transition duration-200 hover:-translate-y-1 hover:border-gold">
-      {%- set thumb = p.extra.image | default(value=p.extra.og_image) %}
-      {%- if thumb %}
-      <div class="aspect-[1200/630] overflow-hidden bg-void">
-        <img src="{{ thumb }}" alt="{{ p.extra.og_image_alt | default(value=p.title) }}" loading="lazy"
-          class="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-105 group-hover:opacity-100">
+      {#- Card art: text-free /og/cards/ variant of the OG slug; falls back to og_image (kampaň posters). -#}
+      {%- set card = p.extra.card | default(value = p.extra.og_image | default(value=config.extra.og_image) | replace(from="/og/pages/", to="/og/cards/")) %}
+      <div class="relative aspect-[16/10] overflow-hidden bg-void">
+        <img src="{{ card }}" alt="{{ p.extra.og_image_alt | default(value=p.title) }}" width="1280" height="800"
+          loading="lazy" decoding="async"
+          class="absolute inset-0 h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-void via-void/45 to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 p-5">
+          {%- if p.extra.eyebrow %}
+          <span class="block text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">{{ p.extra.eyebrow }}</span>
+          {%- endif %}
+          <h3 class="mt-1 text-lg font-bold leading-tight text-presence transition group-hover:text-gold sm:text-xl">{{ p.title }}</h3>
+        </div>
+      </div>
+      {%- if p.description %}
+      <div class="flex flex-1 flex-col gap-3 p-5">
+        <p class="text-sm text-light-gray">{{ p.description }}</p>
+        <span class="mt-auto pt-1 text-sm font-medium text-gold">Detail →</span>
       </div>
       {%- endif %}
-      <div class="flex flex-1 flex-col gap-3 p-6">
-        {%- if p.extra.eyebrow %}
-        <span class="text-xs font-semibold uppercase tracking-[0.18em] text-gold">{{ p.extra.eyebrow }}</span>
-        {%- endif %}
-        <h3 class="text-xl font-bold text-presence group-hover:text-gold">{{ p.title }}</h3>
-        {%- if p.description %}
-        <p class="text-sm text-light-gray">{{ p.description }}</p>
-        {%- endif %}
-        <span class="mt-auto pt-2 text-sm font-medium text-gold">Detail →</span>
-      </div>
     </a>
     {%- endfor %}
   </div>

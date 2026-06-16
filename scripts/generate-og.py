@@ -9,6 +9,7 @@ Render: SVG → PNG přes rsvg-convert (Helvetica/Arial, plná česká diakritik
 """
 import html
 import os
+import random
 import subprocess
 import sys
 import textwrap
@@ -16,11 +17,38 @@ import textwrap
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC = os.path.join(ROOT, "static")
 OUT = os.path.join(STATIC, "og", "pages")
+OUT_CARDS = os.path.join(STATIC, "og", "cards")
 SOCIAL = "/og/social"  # web path under static
 
-W, H = 1200, 630
+W, H = 1200, 630          # OG / social preview (with text)
+CW, CH = 1280, 800        # on-site card art (16:10, TEXT-FREE — HTML overlays the title)
 SANS = "Helvetica Neue, Helvetica, Arial, sans-serif"
 SERIF = "Georgia, Times New Roman, serif"
+
+# Per-slug accent (meta-narrative / section): blue=WITNESS, red=SIGNAL, gold=CONTINUITY/default.
+BLUE, GOLD, RED = "#1d3557", "#d4a574", "#e63946"
+ACCENT = {
+    "motivy-pale-blue-dot": BLUE, "motivy-prvni-pohled": BLUE, "motivy-sagan": BLUE,
+    "motivy-hranice": RED, "motivy-nejnebezpecnejsi-poster": RED,
+    "proc-perspektiva": BLUE, "proc-zvidavost": GOLD, "proc-budoucnost": RED,
+    "proc": BLUE, "motivy": BLUE,
+    "pridej-se": RED, "pridej-se-skolni-vylet-orbit": RED, "pridej-se-vesmir-detske-pravo": RED,
+    "pridej-se-kazde-dite-vidi-zemi": RED, "pridej-se-vetsi-budoucnost": RED,
+}
+
+# Full-bleed, genuinely text-free source photos (asset originals, NOT the letterboxed
+# social JPGs) usable as card backgrounds. Cover-cropped to 16:10.
+_GEN = os.path.join(ROOT, "assets", "campaign-posters", "generated-20260616")
+CARD_PHOTO = {
+    "motivy-prvni-pohled": os.path.join(_GEN, "astronautiste-observatory-curiosity-vertical.png"),
+    "motivy-matka": os.path.join(_GEN, "astronautiste-generational-stewardship-vertical.png"),
+    "motivy-evoluce": os.path.join(_GEN, "astronautiste-hill-rocket-trail-wide.png"),
+    "motivy-skolni-vylet": os.path.join(_GEN, "astronautiste-mission-control-classroom-wide.png"),
+    "pro-koho-ucitele": os.path.join(_GEN, "astronautiste-mission-control-classroom-wide.png"),
+    "pridej-se-skolni-vylet-orbit": os.path.join(_GEN, "astronautiste-mission-control-classroom-wide.png"),
+    "pridej-se-kazde-dite-vidi-zemi": os.path.join(_GEN, "astronautiste-hill-rocket-trail-wide.png"),
+    "pro-koho-rodice": os.path.join(_GEN, "astronautiste-generational-stewardship-vertical.png"),
+}
 
 # slug → (eyebrow, title, background image web-path under static or "")
 PAGES = [
@@ -132,41 +160,81 @@ def build_svg(eyebrow, title, bg):
 </svg>'''
 
 
+def build_card_svg(slug, bg):
+    """Text-free 16:10 card art: cosmic gradient + sparse star field + accent glow.
+    Title/eyebrow are overlaid in HTML/CSS on the page — never baked in here."""
+    accent = ACCENT.get(slug, GOLD)
+    rnd = random.Random(slug)  # deterministic per slug → stable output, varied per page
+    stars = ""
+    for _ in range(90):
+        x, y = rnd.uniform(0, CW), rnd.uniform(0, CH)
+        r = rnd.uniform(0.5, 2.0)
+        op = rnd.uniform(0.15, 0.85)
+        col = GOLD if rnd.random() < 0.12 else "#f8f8f8"
+        stars += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="{col}" opacity="{op:.2f}"/>'
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{CW}" height="{CH}" viewBox="0 0 {CW} {CH}">
+  <defs>
+    <radialGradient id="g" cx="75%" cy="-10%" r="110%">
+      <stop offset="0%" stop-color="{accent}" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="10%" cy="115%" r="80%">
+      <stop offset="0%" stop-color="{accent}" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="{CW}" height="{CH}" fill="#0a0a0a" opacity="{0 if bg else 1}"/>
+  <rect width="{CW}" height="{CH}" fill="#0a0a0a" opacity="{0.42 if bg else 0}"/>
+  {"" if bg else stars}
+  <rect width="{CW}" height="{CH}" fill="url(#g)"/>
+  <rect width="{CW}" height="{CH}" fill="url(#g2)"/>
+</svg>'''
+
+
+def render(svg, png_path, w, h, bg):
+    """Render SVG overlay; composite over cover-cropped poster if bg present."""
+    svg_path = png_path + ".svg"
+    overlay = png_path + ".overlay.png"
+    with open(svg_path, "w", encoding="utf-8") as f:
+        f.write(svg)
+    subprocess.run(["rsvg-convert", "-w", str(w), "-h", str(h), svg_path, "-o", overlay], check=True)
+    if bg:
+        bg_abs = bg if os.path.isabs(bg) else os.path.join(STATIC, bg.lstrip("/"))
+    else:
+        bg_abs = ""
+    if bg_abs and os.path.exists(bg_abs):
+        subprocess.run([
+            "magick", bg_abs, "-resize", f"{w}x{h}^", "-gravity", "center", "-extent", f"{w}x{h}",
+            overlay, "-composite", png_path,
+        ], check=True)
+        os.remove(overlay)
+    else:
+        if bg:
+            print(f"  WARN missing bg: {bg_abs}", file=sys.stderr)
+        os.replace(overlay, png_path)
+    os.remove(svg_path)
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
-    only = set(sys.argv[1:])
+    os.makedirs(OUT_CARDS, exist_ok=True)
+    only = set(a for a in sys.argv[1:] if not a.startswith("-"))
+    cards_only = "--cards" in sys.argv
+    og_only = "--og" in sys.argv
     count = 0
     for slug, eyebrow, title, bg in PAGES:
         if only and slug not in only:
             continue
-        svg = build_svg(eyebrow, title, bg)
-        svg_path = os.path.join(OUT, slug + ".svg")
-        png_path = os.path.join(OUT, slug + ".png")
-        overlay_path = os.path.join(OUT, slug + ".overlay.png")
-        with open(svg_path, "w", encoding="utf-8") as f:
-            f.write(svg)
-        # Render text/branding overlay (transparent where bg should show through).
-        subprocess.run(
-            ["rsvg-convert", "-w", str(W), "-h", str(H), svg_path, "-o", overlay_path],
-            check=True,
-        )
-        bg_abs = os.path.join(STATIC, bg.lstrip("/")) if bg else ""
-        if bg_abs and os.path.exists(bg_abs):
-            # Poster cover-cropped to 1200x630, then overlay composited on top.
-            subprocess.run([
-                "magick", bg_abs,
-                "-resize", f"{W}x{H}^", "-gravity", "center", "-extent", f"{W}x{H}",
-                overlay_path, "-composite", png_path,
-            ], check=True)
-            os.remove(overlay_path)
-        else:
-            if bg:
-                print(f"  WARN missing bg: {bg_abs}", file=sys.stderr)
-            os.replace(overlay_path, png_path)
-        os.remove(svg_path)
+        if not cards_only:  # OG social previews (with text) → /og/pages
+            render(build_svg(eyebrow, title, bg), os.path.join(OUT, slug + ".png"), W, H, bg)
+        if not og_only:     # text-free on-site card art (16:10) → /og/cards
+            # Card backgrounds use ONLY full-bleed text-free asset photos; every other
+            # page gets pure cosmic art (the social posters have baked-in text).
+            card_bg = CARD_PHOTO.get(slug, "")
+            render(build_card_svg(slug, card_bg), os.path.join(OUT_CARDS, slug + ".png"), CW, CH, card_bg)
         count += 1
-        print(f"  ok  {slug}.png")
-    print(f"✅ generated {count} OG images → static/og/pages/")
+        print(f"  ok  {slug}")
+    print(f"✅ generated {count} pages → og/pages + og/cards")
 
 
 if __name__ == "__main__":
