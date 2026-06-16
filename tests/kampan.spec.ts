@@ -108,6 +108,56 @@ test.describe('kampaň prev/next chain', () => {
   });
 });
 
+test.describe('galerie — Flowbite poster carousel', () => {
+  const ITEMS = '#poster-carousel [data-carousel-item]';
+
+  test('page resolves with heading, eyebrow and CTAs', async ({ page }) => {
+    const resp = await page.goto('/galerie/');
+    expect(resp!.status(), 'galerie status').toBe(200);
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Kampaň v pohybu');
+    await expect(page.locator('.eyebrow')).toContainText('Galerie');
+    // CTAs live in <main> (the nav also links /kampan/, so scope to the page body).
+    await expect(page.locator('main a[href="/kampan/"]')).toBeVisible();
+    await expect(page.locator('main a[href="/docs/social-kit/"]')).toBeVisible();
+  });
+
+  test('carousel structure: N slides, matching indicators, prev/next, real posters', async ({ page }) => {
+    await page.goto('/galerie/');
+    const slides = await page.locator(ITEMS).count();
+    expect(slides, 'carousel has slides').toBeGreaterThan(5);
+
+    // One indicator per slide, and a prev/next control.
+    await expect(page.locator('[data-carousel-slide-to]')).toHaveCount(slides);
+    await expect(page.locator('[data-carousel-prev]')).toHaveCount(1);
+    await expect(page.locator('[data-carousel-next]')).toHaveCount(1);
+
+    // Every slide references a real /backgrounds/carousel/ poster.
+    const srcs = await page.locator(`${ITEMS} img`).evaluateAll(
+      els => els.map(e => (e as HTMLImageElement).getAttribute('src')!));
+    expect(srcs).toHaveLength(slides);
+    for (const s of srcs) expect(s).toMatch(/^\/backgrounds\/carousel\/.+\.jpg$/);
+  });
+
+  test('first poster background actually loads (not a broken image)', async ({ page }) => {
+    await page.goto('/galerie/');
+    // First slide is eager-loaded; assert it actually decoded.
+    const first = page.locator(`${ITEMS} img`).first();
+    await expect(first).toHaveJSProperty('complete', true);
+    expect(await first.evaluate((img: HTMLImageElement) => img.naturalWidth),
+      'first poster decoded').toBeGreaterThan(0);
+  });
+
+  test('Flowbite auto-init advances the carousel via the next control', async ({ page }) => {
+    await page.goto('/galerie/');
+    // The shown slide is the one Flowbite has un-hidden.
+    const shownSrc = () => page.locator(`${ITEMS}:not(.hidden) img`).first().getAttribute('src');
+    const before = await shownSrc();
+    await page.locator('[data-carousel-next]').click();
+    // Flowbite transition is ~1s; poll until the shown poster changes (proves JS wired up).
+    await expect.poll(shownSrc, { timeout: 8_000 }).not.toBe(before);
+  });
+});
+
 test.describe('social / OG kit gallery', () => {
   test('gallery resolves with stats, preview figures and brand-QA table', async ({ page }) => {
     const resp = await page.goto('/docs/social-kit/');
