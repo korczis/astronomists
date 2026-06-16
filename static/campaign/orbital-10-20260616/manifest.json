@@ -1,0 +1,349 @@
+{
+  "version": "20260616",
+  "brand": "Astronautiste",
+  "formats": {
+    "clean_vertical": {
+      "size": [
+        2400,
+        3600
+      ],
+      "dpi": 300
+    },
+    "clean_wide_16x9": {
+      "size": [
+        3840,
+        2160
+      ],
+      "dpi": 300
+    },
+    "clean_social": {
+      "size": [
+        1200,
+        630
+      ],
+      "dpi": 300
+    },
+    "rendered_vertical": {
+      "size": [
+        2400,
+        3600
+      ],
+      "dpi": 300
+    },
+    "rendered_wide_16x9": {
+      "size": [
+        3840,
+        2160
+      ],
+      "dpi": 300
+    },
+    "rendered_social": {
+      "size": [
+        1200,
+        630
+      ],
+      "dpi": 300
+    }
+  },
+  "css_tokens": {
+    "void": "#0a0a0a",
+    "presence": "#f8f8f8",
+    "space": "#1d3557",
+    "gold": "#d4a574",
+    "signal": "#e63946",
+    "blue": "#4aa3df",
+    "font_family": "Inter, Arial, Helvetica, sans-serif"
+  },
+  "topics": [
+    {
+      "index": 1,
+      "slug": "pohled-ze-stanice",
+      "headline": "Pohled ze stanice.",
+      "subhead": "Země se vejde do jednoho okna.",
+      "proof": "Kdo vidí celek, chápe odpovědnost.",
+      "accent": "ORBITA",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/01-orbital-station-cupola.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-01-pohled-ze-stanice-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-01-pohled-ze-stanice-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-01-pohled-ze-stanice-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-01-pohled-ze-stanice-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-01-pohled-ze-stanice-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-01-pohled-ze-stanice-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-01-pohled-ze-stanice-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-01-pohled-ze-stanice-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-01-pohled-ze-stanice-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-01-pohled-ze-stanice-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-01-pohled-ze-stanice-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-01-pohled-ze-stanice-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-01-pohled-ze-stanice-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-01-pohled-ze-stanice-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-01-pohled-ze-stanice-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-01-pohled-ze-stanice-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 2,
+      "slug": "vystup-do-volneho-vesmiru",
+      "headline": "Výstup do volného vesmíru.",
+      "subhead": "Odvaha začíná přípravou.",
+      "proof": "Každý krok venku stojí na důvěře a vědě.",
+      "accent": "EVA",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/02-eva-outside-station.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-02-vystup-do-volneho-vesmiru-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-02-vystup-do-volneho-vesmiru-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-02-vystup-do-volneho-vesmiru-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-02-vystup-do-volneho-vesmiru-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-02-vystup-do-volneho-vesmiru-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-02-vystup-do-volneho-vesmiru-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-02-vystup-do-volneho-vesmiru-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-02-vystup-do-volneho-vesmiru-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-02-vystup-do-volneho-vesmiru-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-02-vystup-do-volneho-vesmiru-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-02-vystup-do-volneho-vesmiru-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-02-vystup-do-volneho-vesmiru-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-02-vystup-do-volneho-vesmiru-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-02-vystup-do-volneho-vesmiru-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-02-vystup-do-volneho-vesmiru-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-02-vystup-do-volneho-vesmiru-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 3,
+      "slug": "laborator-na-stanici",
+      "headline": "Laboratoř na stanici.",
+      "subhead": "Pokusy, které padají jen na Zemi.",
+      "proof": "Mikrogravitace ukazuje svět jinak.",
+      "accent": "POKUS",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/03-station-laboratory.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-03-laborator-na-stanici-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-03-laborator-na-stanici-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-03-laborator-na-stanici-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-03-laborator-na-stanici-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-03-laborator-na-stanici-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-03-laborator-na-stanici-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-03-laborator-na-stanici-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-03-laborator-na-stanici-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-03-laborator-na-stanici-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-03-laborator-na-stanici-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-03-laborator-na-stanici-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-03-laborator-na-stanici-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-03-laborator-na-stanici-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-03-laborator-na-stanici-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-03-laborator-na-stanici-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-03-laborator-na-stanici-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 4,
+      "slug": "vylet-na-mesic",
+      "headline": "Výlet na Měsíc.",
+      "subhead": "Ne útěk ze Země. Návrat s perspektivou.",
+      "proof": "Cesta vzhůru učí pokoru k domovu.",
+      "accent": "MĚSÍC",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/04-lunar-transfer.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-04-vylet-na-mesic-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-04-vylet-na-mesic-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-04-vylet-na-mesic-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-04-vylet-na-mesic-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-04-vylet-na-mesic-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-04-vylet-na-mesic-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-04-vylet-na-mesic-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-04-vylet-na-mesic-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-04-vylet-na-mesic-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-04-vylet-na-mesic-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-04-vylet-na-mesic-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-04-vylet-na-mesic-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-04-vylet-na-mesic-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-04-vylet-na-mesic-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-04-vylet-na-mesic-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-04-vylet-na-mesic-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "svitani-na-orbite",
+      "headline": "Svítání na orbitě.",
+      "subhead": "Každých devadesát minut nový začátek.",
+      "proof": "Rytmus kosmu učí trpělivosti.",
+      "accent": "SVÍTÁNÍ",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/05-orbital-sunrise.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-05-svitani-na-orbite-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-05-svitani-na-orbite-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-05-svitani-na-orbite-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-05-svitani-na-orbite-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-05-svitani-na-orbite-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-05-svitani-na-orbite-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-05-svitani-na-orbite-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-05-svitani-na-orbite-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-05-svitani-na-orbite-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-05-svitani-na-orbite-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-05-svitani-na-orbite-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-05-svitani-na-orbite-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-05-svitani-na-orbite-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-05-svitani-na-orbite-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-05-svitani-na-orbite-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-05-svitani-na-orbite-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 6,
+      "slug": "pred-vystupem",
+      "headline": "Před výstupem.",
+      "subhead": "Nejdřív kontrola. Potom odvaha.",
+      "proof": "Bezpečnost je součást dobrodružství.",
+      "accent": "PŘÍPRAVA",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/06-airlock-eva-training.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-06-pred-vystupem-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-06-pred-vystupem-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-06-pred-vystupem-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-06-pred-vystupem-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-06-pred-vystupem-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-06-pred-vystupem-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-06-pred-vystupem-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-06-pred-vystupem-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-06-pred-vystupem-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-06-pred-vystupem-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-06-pred-vystupem-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-06-pred-vystupem-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-06-pred-vystupem-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-06-pred-vystupem-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-06-pred-vystupem-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-06-pred-vystupem-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 7,
+      "slug": "fyzika-bez-tize",
+      "headline": "Fyzika bez tíže.",
+      "subhead": "Kapka vody se stane laboratoří.",
+      "proof": "Když změníš podmínky, uvidíš zákony.",
+      "accent": "MIKROGRAVITACE",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/07-microgravity-physics.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-07-fyzika-bez-tize-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-07-fyzika-bez-tize-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-07-fyzika-bez-tize-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-07-fyzika-bez-tize-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-07-fyzika-bez-tize-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-07-fyzika-bez-tize-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-07-fyzika-bez-tize-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-07-fyzika-bez-tize-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-07-fyzika-bez-tize-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-07-fyzika-bez-tize-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-07-fyzika-bez-tize-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-07-fyzika-bez-tize-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-07-fyzika-bez-tize-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-07-fyzika-bez-tize-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-07-fyzika-bez-tize-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-07-fyzika-bez-tize-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 8,
+      "slug": "prvni-krok-v-prachu",
+      "headline": "První krok v prachu.",
+      "subhead": "Měsíc je blízko. Odpovědnost ještě blíž.",
+      "proof": "Každý otisk má směr domů.",
+      "accent": "KROK",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/08-lunar-surface-excursion.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-08-prvni-krok-v-prachu-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-08-prvni-krok-v-prachu-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-08-prvni-krok-v-prachu-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-08-prvni-krok-v-prachu-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-08-prvni-krok-v-prachu-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-08-prvni-krok-v-prachu-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-08-prvni-krok-v-prachu-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-08-prvni-krok-v-prachu-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-08-prvni-krok-v-prachu-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-08-prvni-krok-v-prachu-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-08-prvni-krok-v-prachu-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-08-prvni-krok-v-prachu-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-08-prvni-krok-v-prachu-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-08-prvni-krok-v-prachu-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-08-prvni-krok-v-prachu-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-08-prvni-krok-v-prachu-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 9,
+      "slug": "navrat-ke-stanici",
+      "headline": "Návrat ke stanici.",
+      "subhead": "Mise končí přesným přiblížením.",
+      "proof": "Velké sny potřebují klidné ruce.",
+      "accent": "NÁVRAT",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/09-moon-return-docking.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-09-navrat-ke-stanici-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-09-navrat-ke-stanici-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-09-navrat-ke-stanici-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-09-navrat-ke-stanici-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-09-navrat-ke-stanici-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-09-navrat-ke-stanici-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-09-navrat-ke-stanici-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-09-navrat-ke-stanici-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-09-navrat-ke-stanici-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-09-navrat-ke-stanici-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-09-navrat-ke-stanici-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-09-navrat-ke-stanici-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-09-navrat-ke-stanici-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-09-navrat-ke-stanici-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-09-navrat-ke-stanici-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-09-navrat-ke-stanici-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 10,
+      "slug": "trida-na-orbite",
+      "headline": "Třída na orbitě.",
+      "subhead": "Učení začne, když se změní měřítko.",
+      "proof": "Vesmír není učebnice. Je to zkušenost.",
+      "accent": "TŘÍDA",
+      "background_source": "assets/campaign-posters/orbital-10-20260616/source-clean/10-orbital-classroom.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/orbital-10-20260616/clean/vertical/astronautiste-10-trida-na-orbite-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/orbital-10-20260616/clean/wide-16x9/astronautiste-10-trida-na-orbite-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/orbital-10-20260616/clean/astronautiste-10-trida-na-orbite-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/orbital-10-20260616/vertical/astronautiste-10-trida-na-orbite-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/orbital-10-20260616/wide-16x9/astronautiste-10-trida-na-orbite-wide-16x9.jpg",
+        "rendered_social": "static/og/social/orbital-10-20260616/astronautiste-10-trida-na-orbite-social.jpg",
+        "rendered_thumb": "static/og/social/orbital-10-20260616/thumbs/astronautiste-10-trida-na-orbite-thumb.jpg",
+        "clean_thumb": "static/og/social/orbital-10-20260616/thumbs/clean/astronautiste-10-trida-na-orbite-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/orbital-10-20260616/clean/vertical/astronautiste-10-trida-na-orbite-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/orbital-10-20260616/clean/wide-16x9/astronautiste-10-trida-na-orbite-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/orbital-10-20260616/clean/astronautiste-10-trida-na-orbite-clean-social.jpg",
+        "rendered_vertical": "/campaign/orbital-10-20260616/rendered/vertical/astronautiste-10-trida-na-orbite-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/orbital-10-20260616/rendered/wide-16x9/astronautiste-10-trida-na-orbite-wide-16x9.jpg",
+        "rendered_social": "/og/social/orbital-10-20260616/astronautiste-10-trida-na-orbite-social.jpg",
+        "rendered_thumb": "/og/social/orbital-10-20260616/thumbs/astronautiste-10-trida-na-orbite-thumb.jpg",
+        "clean_thumb": "/og/social/orbital-10-20260616/thumbs/clean/astronautiste-10-trida-na-orbite-clean-thumb.jpg"
+      }
+    }
+  ]
+}

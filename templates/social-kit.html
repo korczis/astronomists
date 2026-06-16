@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set d = load_data(path="data/og-previews.toml") %}
+
+<section class="relative overflow-hidden bg-cosmic">
+  <div class="container-content py-16 md:py-24">
+    <a href="/docs/" class="text-sm text-mid-gray transition hover:text-gold">← Zpět na dokumentaci</a>
+
+    <p class="eyebrow mt-6">Social / OG Kit</p>
+    <h1 class="mt-3 max-w-3xl text-4xl font-extrabold leading-[1.05] tracking-tight text-presence sm:text-5xl">
+      Náhledy pro sdílení
+    </h1>
+    <div class="signal-rule mt-5"></div>
+    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-light-gray">
+      Když se odkaz na <strong class="text-presence">astronautiste.cz</strong> sdílí na Facebooku, X,
+      LinkedInu, WhatsAppu nebo v Discordu, zobrazí se tato karta. Všechny náhledy jsou
+      generované z kampaňových posterů, mají rozměr <span class="font-mono text-gold">1200×630</span>
+      a běží přes jeden opakovatelný build.
+    </p>
+
+    <!-- Stat chips -->
+    <dl class="mt-9 flex flex-wrap gap-3">
+      <div class="rounded-xl border border-mid-gray/60 bg-deep-gray/80 px-5 py-3">
+        <dt class="text-xs uppercase tracking-[0.16em] text-mid-gray">Náhledů</dt>
+        <dd class="mt-0.5 text-2xl font-bold text-presence">{{ d.total }}</dd>
+      </div>
+      <div class="rounded-xl border border-growth/40 bg-growth/10 px-5 py-3">
+        <dt class="text-xs uppercase tracking-[0.16em] text-growth">Bez chyb</dt>
+        <dd class="mt-0.5 text-2xl font-bold text-presence">{{ d.ok }}</dd>
+      </div>
+      <div class="rounded-xl border border-gold/40 bg-gold/10 px-5 py-3">
+        <dt class="text-xs uppercase tracking-[0.16em] text-gold">Překlep v obrázku</dt>
+        <dd class="mt-0.5 text-2xl font-bold text-presence">{{ d.warn }}</dd>
+      </div>
+      <div class="rounded-xl border border-signal/40 bg-signal/10 px-5 py-3">
+        <dt class="text-xs uppercase tracking-[0.16em] text-signal">Hrubý překlep</dt>
+        <dd class="mt-0.5 text-2xl font-bold text-presence">{{ d.error }}</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- Default OG + použití -->
+<section class="border-t border-mid-gray/40">
+  <div class="container-content grid gap-10 py-14 md:grid-cols-2 md:py-16">
+    <div>
+      <h2 class="text-2xl font-bold text-presence">Default OG webu</h2>
+      <p class="mt-3 text-light-gray">
+        Výchozí náhled pro celý web. Čistý logotyp se správným zápisem
+        <strong class="text-presence">ASTRONAUTISTÉ</strong>.
+      </p>
+      <figure class="mt-5 overflow-hidden rounded-2xl border border-mid-gray/70 bg-black shadow-2xl">
+        <img src="{{ d.hero }}" alt="Default OG — Astronautisté"
+          width="1200" height="630" class="aspect-[1200/630] w-full object-contain"
+          loading="lazy" decoding="async">
+      </figure>
+      <p class="mt-3 font-mono text-xs text-mid-gray">{{ d.hero }}</p>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold text-presence">Náhled pro konkrétní stránku</h2>
+      <p class="mt-3 text-light-gray">
+        Kterákoli stránka nebo sekce může mít vlastní náhled. Stačí do front matteru
+        (<span class="font-mono text-gold">.md</span>) doplnit:
+      </p>
+      <pre class="mt-5 overflow-x-auto rounded-xl border border-mid-gray/60 bg-deep-gray p-5 font-mono text-sm leading-relaxed text-light-gray"><span class="text-mid-gray">[extra]</span>
+og_image = <span class="text-gold">"/og/social/generated-20260616/astronautiste-mission-control-classroom-wide.jpg"</span>
+og_image_alt = <span class="text-gold">"Astronautisté — každé dítě na orbitu."</span></pre>
+      <p class="mt-4 text-sm text-light-gray">
+        Bez tohoto override platí default výše. Šablona automaticky nastaví správný
+        <span class="font-mono text-gold">og:image:type</span> podle přípony.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Galerie podle skupin -->
+{% for g in d.groups %}
+<section class="border-t border-mid-gray/40">
+  <div class="container-content py-14 md:py-16">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-bold text-presence sm:text-3xl">{{ g.title }}</h2>
+        <p class="mt-2 max-w-2xl text-light-gray">{{ g.note }}</p>
+      </div>
+      <span class="rounded-full border border-mid-gray/60 px-4 py-1.5 text-sm text-light-gray">
+        {{ g.count }} {% if g.count == 1 %}náhled{% elif g.count < 5 %}náhledy{% else %}náhledů{% endif %}
+      </span>
+    </div>
+
+    <div class="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {% for it in g.items %}
+      <figure class="group flex flex-col overflow-hidden rounded-2xl border border-mid-gray/70 bg-deep-gray transition duration-200 hover:-translate-y-1 hover:border-gold">
+        <a href="{{ it.og }}" target="_blank" rel="noopener" class="relative block overflow-hidden bg-black">
+          <img src="{{ it.og }}" alt="{{ it.title }}"
+            width="1200" height="630"
+            class="aspect-[1200/630] w-full object-contain transition duration-500 group-hover:scale-[1.03]"
+            loading="lazy" decoding="async">
+          <span class="absolute right-3 top-3 rounded-md bg-void/80 px-2 py-1 text-[0.65rem] font-medium uppercase tracking-[0.12em] text-light-gray backdrop-blur">
+            {{ it.aspect }}
+          </span>
+        </a>
+        <figcaption class="flex flex-1 flex-col gap-3 p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="text-base font-semibold leading-snug text-presence">{{ it.title }}</h3>
+            {% if it.brand == "ok" %}
+              <span class="shrink-0 rounded-full border border-growth/40 bg-growth/10 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-growth">OK</span>
+            {% elif it.brand == "error" %}
+              <span class="shrink-0 rounded-full border border-signal/40 bg-signal/10 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-signal">Chyba</span>
+            {% else %}
+              <span class="shrink-0 rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-gold">Překlep</span>
+            {% endif %}
+          </div>
+          {% if it.note %}<p class="text-sm leading-relaxed text-mid-gray">{{ it.note }}</p>{% endif %}
+          <div class="mt-auto flex items-center justify-between gap-3 pt-1">
+            <code class="truncate font-mono text-xs text-light-gray/70" title="{{ it.og }}">{{ it.og }}</code>
+            <a href="{{ it.og }}" target="_blank" rel="noopener"
+              class="shrink-0 text-xs font-semibold uppercase tracking-[0.1em] text-gold hover:text-presence">Otevřít&nbsp;↗</a>
+          </div>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<!-- Brand QA callout -->
+<section class="border-t border-mid-gray/40">
+  <div class="container-content py-14 md:py-16">
+    <div class="rounded-2xl border border-signal/40 bg-signal/5 p-7 md:p-9">
+      <h2 class="flex items-center gap-3 text-xl font-bold text-presence">
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-signal/20 text-signal">!</span>
+        Brand QA — co opravit
+      </h2>
+      <p class="mt-4 max-w-3xl text-light-gray">
+        Většina kampaňových posterů má <strong class="text-presence">vypálený text</strong> v rastru
+        (nejde editovat, jen přegenerovat). Kanonická podoba je
+        <strong class="text-presence">Astronautisté</strong> / <strong class="text-presence">astronautiste.cz</strong>.
+      </p>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="border-b border-mid-gray/60 text-left text-mid-gray">
+              <th class="py-2 pr-4 font-medium">Chyba v obrázku</th>
+              <th class="py-2 pr-4 font-medium">Správně</th>
+            </tr>
+          </thead>
+          <tbody class="text-light-gray">
+            <tr class="border-b border-mid-gray/30"><td class="py-2 pr-4 font-mono text-signal">AUSTRONAUTISTÉ</td><td class="py-2 pr-4 font-mono text-growth">ASTRONAUTISTÉ</td></tr>
+            <tr class="border-b border-mid-gray/30"><td class="py-2 pr-4 font-mono text-signal">AUSTRANISTÉ</td><td class="py-2 pr-4 font-mono text-growth">ASTRONAUTISTÉ</td></tr>
+            <tr class="border-b border-mid-gray/30"><td class="py-2 pr-4 font-mono text-signal">austronautiste.cz</td><td class="py-2 pr-4 font-mono text-growth">astronautiste.cz</td></tr>
+            <tr class="border-b border-mid-gray/30"><td class="py-2 pr-4 font-mono text-signal">ZVÍDAVOST</td><td class="py-2 pr-4 font-mono text-growth">ZVĚDAVOST</td></tr>
+            <tr class="border-b border-mid-gray/30"><td class="py-2 pr-4 font-mono text-signal">INSPIRUJEME ZÍTKY</td><td class="py-2 pr-4 font-mono text-growth">ZÍTŘKY</td></tr>
+            <tr><td class="py-2 pr-4 font-mono text-signal">SKLÍDĚME</td><td class="py-2 pr-4 font-mono text-growth">SKLÍZÍME</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-6 text-sm text-light-gray">
+        Pro veřejné sdílení preferuj náhledy se štítkem
+        <span class="rounded-full border border-growth/40 bg-growth/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-growth">OK</span>
+        — čistý logotyp a beztextové generated assety.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Regenerace + index -->
+<section class="border-t border-mid-gray/40">
+  <div class="container-content grid gap-10 py-14 md:grid-cols-2 md:py-16">
+    <div>
+      <h2 class="text-2xl font-bold text-presence">Regenerace</h2>
+      <p class="mt-3 text-light-gray">Idempotentní — po změně zdrojů spusť:</p>
+      <pre class="mt-5 overflow-x-auto rounded-xl border border-mid-gray/60 bg-deep-gray p-5 font-mono text-sm leading-relaxed text-light-gray"><span class="text-mid-gray"># náhledy 1200×630 + thumbs + contact sheet</span>
+bash scripts/generate-og-previews.sh
+<span class="text-mid-gray"># přepíše data/og-previews.toml (zdroj této stránky)</span>
+python3 scripts/build-og-manifest.py</pre>
+      <p class="mt-4 text-sm text-mid-gray">
+        Zdroje: <span class="font-mono">assets/campaign-posters/</span> ·
+        výstup: <span class="font-mono">static/og/social/</span>
+      </p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-presence">Vizuální index</h2>
+      <p class="mt-3 text-light-gray">Kontaktní montáž všech náhledů jako jeden obrázek.</p>
+      <a href="{{ d.contact_sheet }}" target="_blank" rel="noopener"
+        class="mt-5 block overflow-hidden rounded-2xl border border-mid-gray/70 bg-black transition hover:border-gold">
+        <img src="{{ d.contact_sheet }}" alt="Kontaktní montáž náhledů"
+          class="w-full object-contain" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock content %}

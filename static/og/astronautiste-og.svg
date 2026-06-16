@@ -43,7 +43,7 @@
 
   <!-- tagline -->
   <text x="90" y="478" fill="#cfcfcf" font-family="Inter, Helvetica, Arial, sans-serif"
-        font-size="40" font-weight="500">Myšlet Hvězd, Jednat Vědecky.</text>
+        font-size="40" font-weight="500">Myslíme na hvězdy, jednáme vědecky.</text>
 
   <!-- domain -->
   <text x="90" y="560" fill="#808080" font-family="Inter, Helvetica, Arial, sans-serif"

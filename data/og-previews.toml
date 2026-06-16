@@ -1,0 +1,208 @@
+# AUTO-GENEROVÁNO scripts/build-og-manifest.py — needituj ručně.
+total = 21
+ok = 6
+warn = 14
+error = 1
+hero = "/og/astronautiste-og-hero.jpg"
+contact_sheet = "/og/social/_contact-sheet.jpg"
+
+[[groups]]
+id = "generated"
+title = "Beztextové generated assety (2026-06-16)"
+note = "Bez vypáleného textu — bezpečné pro veřejné OG s HTML/CSS overlayem."
+count = 4
+
+  [[groups.items]]
+  slug = "astronautiste-generational-stewardship-vertical"
+  title = "Generační odpovědnost"
+  brand = "ok"
+  aspect = "vertical"
+  note = "Beztextové; rodina/stewardship."
+  og = "/og/social/generated-20260616/astronautiste-generational-stewardship-vertical.jpg"
+  thumb = "/og/social/thumbs/generated-20260616/astronautiste-generational-stewardship-vertical.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-hill-rocket-trail-wide"
+  title = "Raketová stopa nad kopcem"
+  brand = "ok"
+  aspect = "wide"
+  note = "Beztextové; sky safe area."
+  og = "/og/social/generated-20260616/astronautiste-hill-rocket-trail-wide.jpg"
+  thumb = "/og/social/thumbs/generated-20260616/astronautiste-hill-rocket-trail-wide.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-mission-control-classroom-wide"
+  title = "Mission control / třída"
+  brand = "ok"
+  aspect = "wide"
+  note = "Beztextové; left safe area pro overlay."
+  og = "/og/social/generated-20260616/astronautiste-mission-control-classroom-wide.jpg"
+  thumb = "/og/social/thumbs/generated-20260616/astronautiste-mission-control-classroom-wide.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-observatory-curiosity-vertical"
+  title = "Observatoř — zvědavost"
+  brand = "ok"
+  aspect = "vertical"
+  note = "Beztextové; vertikální pozadí."
+  og = "/og/social/generated-20260616/astronautiste-observatory-curiosity-vertical.jpg"
+  thumb = "/og/social/thumbs/generated-20260616/astronautiste-observatory-curiosity-vertical.jpg"
+
+[[groups]]
+id = "campaign"
+title = "Kampaňové postery"
+note = "Náhledy 1200×630 (contain na Void Black). Pozor na vypálené překlepy."
+count = 17
+
+  [[groups.items]]
+  slug = "astronautiste-budoucnost-neni-misto-je-to-smer"
+  title = "Budoucnost není místo. Je to směr."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-budoucnost-neni-misto-je-to-smer.jpg"
+  thumb = "/og/social/thumbs/astronautiste-budoucnost-neni-misto-je-to-smer.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-deti-dnes-objevitele-zitra"
+  title = "Děti dnes. Objevitelé zítra."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ + SKLÍDĚME."
+  og = "/og/social/astronautiste-deti-dnes-objevitele-zitra.jpg"
+  thumb = "/og/social/thumbs/astronautiste-deti-dnes-objevitele-zitra.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-dnesni-rozhodnuti-jeho-zitrek-story"
+  title = "Dnešní rozhodnutí. Jeho zítřek."
+  brand = "ok"
+  aspect = "story"
+  note = "Matka a syn, ISS za oknem."
+  og = "/og/social/astronautiste-dnesni-rozhodnuti-jeho-zitrek-story.jpg"
+  thumb = "/og/social/thumbs/astronautiste-dnesni-rozhodnuti-jeho-zitrek-story.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-hranice-konci-zvedavost-ne"
+  title = "Hranice končí. Zvědavost ne."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-hranice-konci-zvedavost-ne.jpg"
+  thumb = "/og/social/thumbs/astronautiste-hranice-konci-zvedavost-ne.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-jedna-planeta-mnoho-generaci-wide"
+  title = "Jedna planeta. Mnoho generací."
+  brand = "warn"
+  aspect = "wide"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-jedna-planeta-mnoho-generaci-wide.jpg"
+  thumb = "/og/social/thumbs/astronautiste-jedna-planeta-mnoho-generaci-wide.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-kazde-dite-na-orbitu-nase-nejvetsi-investice-wide"
+  title = "Každé dítě na orbitu (Einstein)"
+  brand = "warn"
+  aspect = "wide"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-kazde-dite-na-orbitu-nase-nejvetsi-investice-wide.jpg"
+  thumb = "/og/social/thumbs/astronautiste-kazde-dite-na-orbitu-nase-nejvetsi-investice-wide.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-kazde-dite-na-orbitu-program-story"
+  title = "Každé dítě na orbitu — program"
+  brand = "error"
+  aspect = "story"
+  note = "V obrázku AUSTRANISTÉ."
+  og = "/og/social/astronautiste-kazde-dite-na-orbitu-program-story.jpg"
+  thumb = "/og/social/thumbs/astronautiste-kazde-dite-na-orbitu-program-story.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-kazde-dite-na-orbitu-square"
+  title = "Každé dítě na orbitu (typografický)"
+  brand = "warn"
+  aspect = "square"
+  note = "V obrázku austronautiste.cz."
+  og = "/og/social/astronautiste-kazde-dite-na-orbitu-square.jpg"
+  thumb = "/og/social/thumbs/astronautiste-kazde-dite-na-orbitu-square.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-logo-horizon-wide"
+  title = "Logo nad horizontem Země"
+  brand = "ok"
+  aspect = "wide"
+  note = "Čistý logotyp — vhodné jako default OG."
+  og = "/og/social/astronautiste-logo-horizon-wide.jpg"
+  thumb = "/og/social/thumbs/astronautiste-logo-horizon-wide.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-nektere-lekce-se-nedaji-naucit"
+  title = "Některé lekce se nedají naučit. Musíš je vidět."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-nektere-lekce-se-nedaji-naucit.jpg"
+  thumb = "/og/social/thumbs/astronautiste-nektere-lekce-se-nedaji-naucit.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-objevujeme-dnesek-inspirujeme-zitky"
+  title = "Objevujeme dnešek. Inspirujeme zítřky."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ + ZÍTKY."
+  og = "/og/social/astronautiste-objevujeme-dnesek-inspirujeme-zitky.jpg"
+  thumb = "/og/social/thumbs/astronautiste-objevujeme-dnesek-inspirujeme-zitky.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-rocket-trail-mirime-vysoko"
+  title = "Míříme vysoko. Pro všechny."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-rocket-trail-mirime-vysoko.jpg"
+  thumb = "/og/social/thumbs/astronautiste-rocket-trail-mirime-vysoko.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-vzhuru-za-poznanim"
+  title = "Vzhůru za poznáním. Za budoucností. Za dětmi."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-vzhuru-za-poznanim.jpg"
+  thumb = "/og/social/thumbs/astronautiste-vzhuru-za-poznanim.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-zvedavost-je-jiskra-galaxy-jar"
+  title = "Zvědavost je jiskra (galaxie ve sklenici)"
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-zvedavost-je-jiskra-galaxy-jar.jpg"
+  thumb = "/og/social/thumbs/astronautiste-zvedavost-je-jiskra-galaxy-jar.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-zvedavost-je-jiskra-reading"
+  title = "Zvědavost je jiskra (čtení)"
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ + ZVÍDAVOST."
+  og = "/og/social/astronautiste-zvedavost-je-jiskra-reading.jpg"
+  thumb = "/og/social/thumbs/astronautiste-zvedavost-je-jiskra-reading.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-zvedavost-je-palivo-vzdelani-je-sila"
+  title = "Zvědavost je palivo. Vzdělání je síla."
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-zvedavost-je-palivo-vzdelani-je-sila.jpg"
+  thumb = "/og/social/thumbs/astronautiste-zvedavost-je-palivo-vzdelani-je-sila.jpg"
+
+  [[groups.items]]
+  slug = "astronautiste-zvedavost-otevira-dvere"
+  title = "Zvědavost otevírá dveře"
+  brand = "warn"
+  aspect = "portrait"
+  note = "V obrázku AUSTRONAUTISTÉ."
+  og = "/og/social/astronautiste-zvedavost-otevira-dvere.jpg"
+  thumb = "/og/social/thumbs/astronautiste-zvedavost-otevira-dvere.jpg"
