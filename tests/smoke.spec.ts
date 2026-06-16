@@ -45,6 +45,29 @@ test.describe('Astronautisté landing — smoke', () => {
     await expect(page.getByRole('link').first()).toBeVisible();
   });
 
+  test('enhancement layer is wired and vendored locally (no external CDN scripts)', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('#starfield-host')).toHaveCount(1);
+    for (const src of ['/js/p5.min.js', '/js/alpine.min.js', '/js/alpine-intersect.min.js', '/js/flowbite.min.js']) {
+      await expect(page.locator(`script[src="${src}"]`)).toHaveCount(1);
+    }
+    // Libraries are vendored — no third-party <script src="http...">.
+    await expect(page.locator('script[src^="http"]')).toHaveCount(0);
+  });
+
+  test('p5 starfield canvas renders in the hero', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('#starfield-host canvas')).toBeVisible();
+  });
+
+  test('scroll-reveal sections become visible (Alpine x-intersect)', async ({ page }) => {
+    await page.goto('/');
+    const brand = page.locator('#brand');
+    await brand.scrollIntoViewIfNeeded();
+    await expect(brand).toHaveClass(/is-in/);
+    await expect(brand).toBeVisible();
+  });
+
   test('no internal anchor targets are missing', async ({ page }) => {
     await page.goto('/');
     const hrefs = await page.locator('a[href^="#"]').evaluateAll(

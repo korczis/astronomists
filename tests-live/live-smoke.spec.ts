@@ -48,6 +48,9 @@ test.describe('astronautiste.cz — LIVE deployment', () => {
     const paths = [
       '/css/main.css',
       '/js/flowbite.min.js',
+      '/js/p5.min.js',
+      '/js/alpine.min.js',
+      '/js/alpine-intersect.min.js',
       '/og/astronautiste-og.png',
       '/favicon.svg',
       '/favicon.ico',
@@ -61,6 +64,11 @@ test.describe('astronautiste.cz — LIVE deployment', () => {
       const r = await request.get(p);
       expect(r.status(), `${p} should be 200`).toBe(200);
     }
+  });
+
+  test('p5 starfield canvas renders in the hero', async ({ page }) => {
+    await page.goto('/', { waitUntil: 'networkidle' });
+    await expect(page.locator('#starfield-host canvas')).toBeVisible();
   });
 
   test('no console errors on homepage', async ({ page }) => {
