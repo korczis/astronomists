@@ -1,0 +1,4 @@
+Contact: mailto:korcak@able.cz
+Expires: 2027-06-16T00:00:00Z
+Preferred-Languages: cs, en
+Canonical: https://astronautiste.cz/.well-known/security.txt

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-void text-presence font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-signal text-presence;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold;
+  }
+  .signal-rule {
+    @apply h-1 w-16 rounded-full bg-signal;
+  }
+  .pillar-card {
+    @apply flex h-full flex-col gap-4 rounded-2xl border border-mid-gray/70 bg-deep-gray p-7 transition duration-200 hover:-translate-y-1 hover:border-gold;
+  }
+  /* Docs prose: @tailwindcss/typography (prose prose-invert) handles the rest */
+  .doc {
+    @apply prose prose-invert max-w-3xl prose-headings:text-presence prose-h2:text-gold prose-a:text-gold prose-strong:text-presence;
+  }
+}

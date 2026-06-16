@@ -1,0 +1,359 @@
+{
+  "version": "1.0.0",
+  "name": "Astronautisté Design System",
+  "description": "Complete design system for Astronautisté brand mythology",
+  "colors": {
+    "primary": {
+      "voidBlack": {
+        "name": "Void Black",
+        "hex": "#0a0a0a",
+        "rgb": "10, 10, 10",
+        "usage": "primary background, cosmic depth",
+        "wcagAA": true,
+        "wcagAAA": true
+      },
+      "presenceWhite": {
+        "name": "Presence White",
+        "hex": "#f8f8f8",
+        "rgb": "248, 248, 248",
+        "usage": "typography, primary content, light backgrounds",
+        "wcagAA": true,
+        "wcagAAA": true
+      },
+      "signalRed": {
+        "name": "Signal Red",
+        "hex": "#e63946",
+        "rgb": "230, 57, 70",
+        "usage": "emphasis, importance, action",
+        "wcagAA": true,
+        "wcagAAA": false
+      }
+    },
+    "secondary": {
+      "pragueGold": {
+        "name": "Prague Gold",
+        "hex": "#d4a574",
+        "rgb": "212, 165, 116",
+        "usage": "warmth accent, heritage connection",
+        "wcagAA": false,
+        "wcagAAA": false,
+        "notes": "use on dark backgrounds only"
+      },
+      "spaceBlue": {
+        "name": "Space Blue",
+        "hex": "#1d3557",
+        "rgb": "29, 53, 87",
+        "usage": "depth, credibility, secondary emphasis",
+        "wcagAA": true,
+        "wcagAAA": true
+      },
+      "growthGreen": {
+        "name": "Growth Green",
+        "hex": "#06a77d",
+        "rgb": "6, 168, 125",
+        "usage": "positive outcome, progress, health",
+        "wcagAA": true,
+        "wcagAAA": true
+      }
+    },
+    "tertiary": {
+      "deepGray": {
+        "name": "Deep Gray",
+        "hex": "#1a1a1a",
+        "rgb": "26, 26, 26",
+        "usage": "card backgrounds, elevated surfaces"
+      },
+      "midGray": {
+        "name": "Mid Gray",
+        "hex": "#404040",
+        "rgb": "64, 64, 64",
+        "usage": "borders, dividers, disabled states"
+      },
+      "lightGray": {
+        "name": "Light Gray",
+        "hex": "#e8e8e8",
+        "rgb": "232, 232, 232",
+        "usage": "subtle backgrounds, hover states"
+      }
+    },
+    "semantic": {
+      "alert": "#e63946",
+      "warning": "#d4a574",
+      "success": "#06a77d",
+      "info": "#1d3557",
+      "disabled": "#404040"
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "sansSerif": "Inter, system-ui, -apple-system, sans-serif",
+      "serif": "Georgia, 'Times New Roman', serif",
+      "monospace": "'JetBrains Mono', 'Courier New', monospace"
+    },
+    "heading": {
+      "h1": {
+        "fontSize": "56px",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.02em",
+        "fontWeight": "700",
+        "fontFamily": "sansSerif",
+        "usage": "page titles, hero sections"
+      },
+      "h2": {
+        "fontSize": "40px",
+        "lineHeight": "1.3",
+        "letterSpacing": "-0.015em",
+        "fontWeight": "700",
+        "fontFamily": "sansSerif",
+        "usage": "section headlines"
+      },
+      "h3": {
+        "fontSize": "28px",
+        "lineHeight": "1.4",
+        "letterSpacing": "0em",
+        "fontWeight": "700",
+        "fontFamily": "sansSerif",
+        "usage": "subsection titles"
+      },
+      "h4": {
+        "fontSize": "20px",
+        "lineHeight": "1.5",
+        "letterSpacing": "0.01em",
+        "fontWeight": "600",
+        "fontFamily": "sansSerif",
+        "usage": "card titles, component headers"
+      }
+    },
+    "body": {
+      "large": {
+        "fontSize": "18px",
+        "lineHeight": "1.6",
+        "letterSpacing": "0em",
+        "fontWeight": "400",
+        "fontFamily": "sansSerif",
+        "usage": "introductory text, callouts"
+      },
+      "regular": {
+        "fontSize": "16px",
+        "lineHeight": "1.6",
+        "letterSpacing": "0em",
+        "fontWeight": "400",
+        "fontFamily": "sansSerif",
+        "usage": "body text, standard content"
+      },
+      "small": {
+        "fontSize": "14px",
+        "lineHeight": "1.5",
+        "letterSpacing": "0.005em",
+        "fontWeight": "400",
+        "fontFamily": "sansSerif",
+        "usage": "supporting text, metadata"
+      },
+      "label": {
+        "fontSize": "12px",
+        "lineHeight": "1.5",
+        "letterSpacing": "0.1em",
+        "fontWeight": "600",
+        "fontFamily": "sansSerif",
+        "textTransform": "uppercase",
+        "usage": "form labels, badges, tags"
+      }
+    },
+    "data": {
+      "code": {
+        "fontSize": "13px",
+        "lineHeight": "1.5",
+        "letterSpacing": "0em",
+        "fontWeight": "400",
+        "fontFamily": "monospace",
+        "usage": "code samples, technical content"
+      },
+      "metric": {
+        "fontSize": "14px",
+        "lineHeight": "1.4",
+        "letterSpacing": "0em",
+        "fontWeight": "500",
+        "fontFamily": "monospace",
+        "usage": "numerical data, KPIs"
+      }
+    },
+    "philosophical": {
+      "callout": {
+        "fontSize": "24px",
+        "lineHeight": "1.4",
+        "letterSpacing": "0em",
+        "fontWeight": "400",
+        "fontFamily": "serif",
+        "fontStyle": "italic",
+        "usage": "quotations, philosophical anchors"
+      }
+    }
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px",
+      "4xl": "96px"
+    }
+  },
+  "components": {
+    "card": {
+      "background": "#1a1a1a",
+      "border": "1px solid #404040",
+      "padding": "32px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "description": "Primary container element"
+    },
+    "button": {
+      "primary": {
+        "background": "#f8f8f8",
+        "color": "#0a0a0a",
+        "padding": "12px 32px",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "letterSpacing": "0.1em",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "none",
+        "states": {
+          "hover": {
+            "background": "#1d3557",
+            "color": "#f8f8f8"
+          },
+          "active": {
+            "background": "#e63946",
+            "color": "#f8f8f8"
+          },
+          "disabled": {
+            "background": "#404040",
+            "color": "#666666"
+          }
+        }
+      },
+      "secondary": {
+        "background": "transparent",
+        "color": "#f8f8f8",
+        "padding": "10px 30px",
+        "fontSize": "14px",
+        "fontWeight": "700",
+        "letterSpacing": "0.1em",
+        "textTransform": "uppercase",
+        "borderRadius": "0px",
+        "border": "2px solid #f8f8f8",
+        "states": {
+          "hover": {
+            "borderColor": "#e63946",
+            "color": "#f8f8f8"
+          },
+          "active": {
+            "background": "#e63946",
+            "borderColor": "#e63946",
+            "color": "#f8f8f8"
+          }
+        }
+      }
+    },
+    "badge": {
+      "background": "transparent",
+      "border": "1px solid currentColor",
+      "padding": "4px 12px",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "letterSpacing": "0.1em",
+      "textTransform": "uppercase",
+      "borderRadius": "0px",
+      "colors": {
+        "alert": "#e63946",
+        "info": "#1d3557",
+        "success": "#06a77d",
+        "warning": "#d4a574"
+      }
+    },
+    "divider": {
+      "height": "1px",
+      "background": "rgba(255, 255, 255, 0.1)",
+      "margin": "32px 0",
+      "description": "Subtle separation line"
+    }
+  },
+  "topology": {
+    "orbital": {
+      "stroke": "2px",
+      "strokeColor": "#0a0a0a",
+      "fill": "none",
+      "minRadius": "12px",
+      "usage": "loading states, progress indicators, network nodes"
+    },
+    "pathway": {
+      "stroke": "2px",
+      "strokeColor": "#f8f8f8",
+      "fill": "none",
+      "curveType": "cubic-bezier",
+      "minRadiusOfCurvature": "3px",
+      "arrowheadStyle": "filled-triangle",
+      "usage": "process flows, timeline progression, connection maps"
+    },
+    "network": {
+      "nodeRadius": "8px-16px",
+      "edgeStroke": "1px-2px",
+      "edgeColor": "#404040",
+      "colorCodeByType": true,
+      "usage": "organizational structures, relationship maps, system architecture"
+    },
+    "layering": {
+      "method": "opacity-or-size",
+      "opacityScale": ["100%", "75%", "50%", "25%"],
+      "description": "Z-axis indicated through opacity or size diminishment"
+    }
+  },
+  "layout": {
+    "maxWidth": "1200px",
+    "gridColumns": "12",
+    "gutterWidth": "24px",
+    "negativeSpaceMinimum": "40%",
+    "aspectRatios": {
+      "hero": "16:9",
+      "card": "4:3",
+      "thumbnail": "1:1"
+    }
+  },
+  "designLevels": {
+    "level1": {
+      "name": "Cosmic (Strategic)",
+      "purpose": "Brand identity, global movement",
+      "scale": "Billboards, conference stages, museum installations",
+      "assetTypes": ["brand-guidelines", "hero-photography", "poster-series", "keynote-visuals"]
+    },
+    "level2": {
+      "name": "Institutional (Organizational)",
+      "purpose": "School, university, research institution adoption",
+      "scale": "Educational posters, partnership collateral",
+      "assetTypes": ["poster-series", "motif-library", "motion-graphics", "curriculum-integration"]
+    },
+    "level3": {
+      "name": "Product (Operational)",
+      "purpose": "Digital platforms and tools",
+      "scale": "Web UI, mobile app, dashboard",
+      "assetTypes": ["ui-components", "data-visualizations", "interaction-patterns", "responsive-design"]
+    },
+    "level4": {
+      "name": "Community (Engagement)",
+      "purpose": "User, educator, parent engagement",
+      "scale": "Social media, downloadable assets, community badges",
+      "assetTypes": ["social-templates", "downloadable-illustrations", "badges", "open-source-assets"]
+    },
+    "level5": {
+      "name": "Craft (Artistic)",
+      "purpose": "Premium, artisanal materials",
+      "scale": "Art books, limited-edition prints, merchandise",
+      "assetTypes": ["artist-books", "poster-collaborations", "merchandise", "collector-portfolio"]
+    }
+  }
+}

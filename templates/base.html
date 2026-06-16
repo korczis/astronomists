@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr" class="dark">
+<head>
+{%- if section is defined %}
+  {% set pg_title = section.title %}
+  {% set pg_desc = section.description | default(value=config.description) %}
+  {% set pg_url = section.permalink %}
+{%- elif page is defined %}
+  {% set pg_title = page.title %}
+  {% set pg_desc = page.description | default(value=config.description) %}
+  {% set pg_url = page.permalink %}
+{%- else %}
+  {% set pg_title = config.title %}
+  {% set pg_desc = config.description %}
+  {% set pg_url = config.base_url ~ "/" %}
+{%- endif %}
+{% include "partials/head.html" %}
+</head>
+<body class="bg-void text-presence font-sans">
+  {% include "partials/nav.html" %}
+  <main>
+    {% block content %}{% endblock content %}
+  </main>
+  {% include "partials/footer.html" %}
+  <script src="/js/flowbite.min.js" defer></script>
+</body>
+</html>

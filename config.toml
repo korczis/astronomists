@@ -1,0 +1,28 @@
+base_url = "https://astronautiste.cz"
+title = "Astronautisté"
+description = "Decisions under uncertainty. Without guessing. — auditovatelná intelligence platforma, kde každé rozhodnutí stojí na ověřených důkazech."
+default_language = "cs"
+
+compile_sass = false
+build_search_index = false
+generate_feeds = false
+minify_html = true
+ignored_content = ["node_modules/**", "package*.json"]
+
+taxonomies = []
+
+[markdown]
+smart_punctuation = true
+
+# zola check link validation: warn (don't fail) on flaky/external refs
+[link_checker]
+internal_level = "error"
+external_level = "warn"
+
+[extra]
+tagline_cs = "Myšlet Hvězd, Jednat Vědecky."
+promise = "Decisions under uncertainty. Without guessing."
+og_image = "/og/astronautiste-og.png"
+og_image_alt = "Astronautisté — Myšlet Hvězd, Jednat Vědecky."
+repo_url = "https://github.com/korczis/astronomists"
+contact_email = "korcak@able.cz"

@@ -1,0 +1,33 @@
+<nav class="sticky top-0 z-30 border-b border-mid-gray/60 bg-void/85 backdrop-blur-md">
+  <div class="container-content flex flex-wrap items-center justify-between gap-3 py-3.5">
+    <a href="/" class="flex items-center gap-2.5">
+      <span class="h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_12px_#d4a574]"></span>
+      <span class="text-base font-bold tracking-[0.04em] text-presence">ASTRONAUTISTÉ</span>
+    </a>
+
+    <button data-collapse-toggle="nav-menu" type="button"
+      class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-light-gray hover:bg-deep-gray md:hidden"
+      aria-controls="nav-menu" aria-expanded="false">
+      <span class="sr-only">Otevřít menu</span>
+      <svg class="h-5 w-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+
+    <div class="hidden w-full md:block md:w-auto" id="nav-menu">
+      <ul class="mt-3 flex flex-col gap-1 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7">
+        <li><a href="#platforma" class="block py-1.5 text-light-gray hover:text-gold">Platforma</a></li>
+        <li><a href="#pilire" class="block py-1.5 text-light-gray hover:text-gold">Pilíře</a></li>
+        <li><a href="#use-cases" class="block py-1.5 text-light-gray hover:text-gold">Use&#8209;cases</a></li>
+        <li><a href="#brand" class="block py-1.5 text-light-gray hover:text-gold">Brand&nbsp;&amp;&nbsp;Docs</a></li>
+        <li>
+          <a href="mailto:{{ config.extra.contact_email }}?subject=Astronautisté%20—%20risk%20intelligence%20assessment"
+            class="mt-1 inline-flex items-center rounded-lg bg-presence px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-void transition hover:bg-gold md:mt-0">
+            Get a demo
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

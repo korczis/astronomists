@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="82%" cy="-6%" r="70%">
+      <stop offset="0%" stop-color="#1d3557" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#1d3557" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="6%" cy="112%" r="60%">
+      <stop offset="0%" stop-color="#d4a574" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#d4a574" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="dot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9c9"/>
+      <stop offset="50%" stop-color="#d4a574"/>
+      <stop offset="100%" stop-color="#a97c4c"/>
+    </radialGradient>
+    <radialGradient id="dotglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4a574" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#d4a574" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- orbit + dot motif, top right -->
+  <ellipse cx="1010" cy="150" rx="190" ry="96" fill="none" stroke="#d4a574" stroke-opacity="0.30"
+           stroke-width="3" transform="rotate(-24 1010 150)"/>
+  <circle cx="1010" cy="150" r="90" fill="url(#dotglow)"/>
+  <circle cx="1010" cy="150" r="30" fill="url(#dot)"/>
+  <circle cx="1150" cy="92" r="8" fill="#e63946"/>
+
+  <!-- eyebrow -->
+  <text x="90" y="250" fill="#d4a574" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="600" letter-spacing="8">BRAND PACKAGE · v1.0.0</text>
+
+  <!-- wordmark -->
+  <text x="86" y="372" fill="#f8f8f8" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="128" font-weight="800" letter-spacing="-3">Astronautisté</text>
+
+  <!-- signal rule -->
+  <rect x="92" y="410" width="96" height="6" rx="3" fill="#e63946"/>
+
+  <!-- tagline -->
+  <text x="90" y="478" fill="#cfcfcf" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="40" font-weight="500">Myšlet Hvězd, Jednat Vědecky.</text>
+
+  <!-- domain -->
+  <text x="90" y="560" fill="#808080" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="500" letter-spacing="2">astronautiste.cz</text>
+</svg>
