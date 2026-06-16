@@ -40,6 +40,34 @@ if [ -n "$markers" ]; then
   fail=1
 fi
 
+# --- Gate 5: Flowbite v2 / Tailwind v3 stack doctrine ---
+# Policy: .aiad/policies/flowbite-stack.policy.md
+# Scans only build SOURCE (css/js/html/config); .md docs are EXEMPT (they document the rules).
+src=$(printf '%s\n' "$staged" \
+  | grep -E '\.(css|js|html)$|(^|/)(tailwind|postcss)\.config\.js$|(^|/)package\.json$' \
+  | grep -vE '\.min\.js$' || true)
+if [ -n "$src" ]; then
+  v4=$(git diff --cached -U0 -- $src 2>/dev/null | grep -E '^\+' \
+    | grep -E '@custom-variant[[:space:]]+dark|@plugin[[:space:]]+["'\'']flowbite|@import[[:space:]]+["'\'']tailwindcss|@theme[[:space:]]*\{' || true)
+  if [ -n "$v4" ]; then
+    echo "BLOCKED: Tailwind v4 / Flowbite v4 syntax in source — projekt je Flowbite v2 / Tailwind v3."
+    printf '%s\n' "$v4"
+    echo "  doctrine: .aiad/policies/flowbite-stack.policy.md"
+    echo "  use: @tailwind base/components/utilities; darkMode:'class'; require('flowbite/plugin')"
+    fail=1
+  fi
+fi
+# advisory WARN: major bump of flowbite (^3/^4) or tailwindcss (^4) in package.json
+pkg=$(printf '%s\n' "$staged" | grep -E '(^|/)package\.json$' || true)
+if [ -n "$pkg" ]; then
+  bump=$(git diff --cached -U0 -- $pkg | grep -E '^\+' \
+    | grep -E '"flowbite":[[:space:]]*"[~^]?[34]\.|"tailwindcss":[[:space:]]*"[~^]?4\.' || true)
+  if [ -n "$bump" ]; then
+    echo "WARN: major bump flowbite/tailwindcss je BREAKING (v4 CSS-first)."
+    echo "  Naplánuj jako samostatný PR + přepiš .aiad/policies/flowbite-stack.policy.md (advisory)."
+  fi
+fi
+
 if [ "$fail" -ne 0 ]; then
   echo "pre-commit: FAILED. Create a NEW commit after fixing (do not --no-verify)."
   exit 1
