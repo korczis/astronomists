@@ -5,23 +5,52 @@
   {% set pg_title = section.title %}
   {% set pg_desc = section.description | default(value=config.description) %}
   {% set pg_url = section.permalink %}
+  {% set pg_og_image = section.extra.og_image | default(value=config.extra.og_image) %}
+  {% set pg_og_image_alt = section.extra.og_image_alt | default(value=config.extra.og_image_alt) %}
 {%- elif page is defined %}
   {% set pg_title = page.title %}
   {% set pg_desc = page.description | default(value=config.description) %}
   {% set pg_url = page.permalink %}
+  {% set pg_og_image = page.extra.og_image | default(value=config.extra.og_image) %}
+  {% set pg_og_image_alt = page.extra.og_image_alt | default(value=config.extra.og_image_alt) %}
 {%- else %}
   {% set pg_title = config.title %}
   {% set pg_desc = config.description %}
   {% set pg_url = config.base_url ~ "/" %}
+  {% set pg_og_image = config.extra.og_image %}
+  {% set pg_og_image_alt = config.extra.og_image_alt %}
 {%- endif %}
 {% include "partials/head.html" %}
 </head>
 <body class="bg-void text-presence font-sans">
+  <!-- Scroll progress (Alpine micro-interaction; degrades to an invisible 0-width bar without JS). -->
+  <div x-data="{ p: 0 }"
+    x-init="
+      const calc = () => {
+        const h = document.documentElement.scrollHeight - window.innerHeight;
+        p = h > 0 ? Math.min(100, (window.scrollY / h) * 100) : 0;
+      };
+      calc();
+      window.addEventListener('scroll', calc, { passive: true });
+      window.addEventListener('resize', calc, { passive: true });
+    "
+    class="fixed inset-x-0 top-0 z-50 h-0.5" aria-hidden="true">
+    <div class="h-full bg-gold transition-[width] duration-150 ease-out" :style="`width:${p}%`"></div>
+  </div>
+
   {% include "partials/nav.html" %}
   <main>
     {% block content %}{% endblock content %}
   </main>
   {% include "partials/footer.html" %}
+
+  <!-- Enhancement layer (vendored locally from node_modules — no external CDN, no SRI needed). -->
+  <!-- Order matters: p5 before starfield; intersect plugin before Alpine core. All deferred. -->
+  <script src="/js/p5.min.js" defer></script>
+  <script src="/js/starfield.js" defer></script>
+  <script src="/js/alpine-intersect.min.js" defer></script>
+  <script src="/js/alpine.min.js" defer></script>
+  <script src="/js/enhance.js" defer></script>
   <script src="/js/flowbite.min.js" defer></script>
 </body>
 </html>

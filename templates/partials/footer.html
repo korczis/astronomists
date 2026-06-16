@@ -10,21 +10,23 @@
         <p class="mt-1 text-sm text-mid-gray">{{ config.extra.promise }}</p>
       </div>
 
-      <div class="grid grid-cols-2 gap-8 text-sm">
+      <div class="grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
         <div>
           <h3 class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-mid-gray">Hnutí</h3>
           <ul class="space-y-2">
-            <li><a href="#proc" class="text-light-gray hover:text-gold">Proč</a></li>
-            <li><a href="#manifest" class="text-light-gray hover:text-gold">Manifest</a></li>
-            <li><a href="#pro-koho" class="text-light-gray hover:text-gold">Pro koho</a></li>
-            <li><a href="#motivy" class="text-light-gray hover:text-gold">Motivy</a></li>
+            <li><a href="/proc/" class="text-light-gray hover:text-gold">Proč</a></li>
+            <li><a href="/manifest/" class="text-light-gray hover:text-gold">Manifest</a></li>
+            <li><a href="/pro-koho/" class="text-light-gray hover:text-gold">Pro koho</a></li>
+            <li><a href="/motivy/" class="text-light-gray hover:text-gold">Motivy</a></li>
+            <li><a href="/pridej-se/" class="text-light-gray hover:text-gold">Přidej se</a></li>
           </ul>
         </div>
         <div>
           <h3 class="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-mid-gray">Brand &amp; Docs</h3>
           <ul class="space-y-2">
-            <li><a href="{{ config.extra.repo_url }}" class="text-light-gray hover:text-gold">Brand package (repo)</a></li>
+            <li><a href="/brand/" class="text-light-gray hover:text-gold">Brand &amp; Design System</a></li>
             <li><a href="/docs/" class="text-light-gray hover:text-gold">Dokumentace</a></li>
+            <li><a href="{{ config.extra.repo_url }}" class="text-light-gray hover:text-gold">Brand package (repo)</a></li>
             <li><a href="/.well-known/security.txt" class="text-light-gray hover:text-gold">security.txt</a></li>
           </ul>
         </div>
