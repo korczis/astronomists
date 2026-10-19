@@ -1,0 +1,784 @@
+{
+  "version": "20260616",
+  "brand": "Astronautiste",
+  "formats": {
+    "clean_vertical": {
+      "size": [
+        2400,
+        3600
+      ],
+      "dpi": 300
+    },
+    "clean_wide_16x9": {
+      "size": [
+        3840,
+        2160
+      ],
+      "dpi": 300
+    },
+    "clean_social": {
+      "size": [
+        1200,
+        630
+      ],
+      "dpi": 300
+    },
+    "rendered_vertical": {
+      "size": [
+        2400,
+        3600
+      ],
+      "dpi": 300
+    },
+    "rendered_wide_16x9": {
+      "size": [
+        3840,
+        2160
+      ],
+      "dpi": 300
+    },
+    "rendered_social": {
+      "size": [
+        1200,
+        630
+      ],
+      "dpi": 300
+    }
+  },
+  "css_tokens": {
+    "void": "#0a0a0a",
+    "presence": "#f8f8f8",
+    "space": "#1d3557",
+    "gold": "#d4a574",
+    "signal": "#e63946",
+    "blue": "#4aa3df",
+    "font_family": "Inter, Arial, Helvetica, sans-serif"
+  },
+  "topics": [
+    {
+      "index": 1,
+      "slug": "zvedavost-je-start",
+      "headline": "Zvědavost je start.",
+      "subhead": "Každá velká cesta začíná otázkou.",
+      "proof": "Podporujeme děti, které se ptají proč.",
+      "accent": "ZVĚDAVOST",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-01-zvedavost-je-start-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-01-zvedavost-je-start-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-01-zvedavost-je-start-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-01-zvedavost-je-start-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-01-zvedavost-je-start-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-01-zvedavost-je-start-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-01-zvedavost-je-start-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-01-zvedavost-je-start-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-01-zvedavost-je-start-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-01-zvedavost-je-start-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-01-zvedavost-je-start-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-01-zvedavost-je-start-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-01-zvedavost-je-start-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-01-zvedavost-je-start-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-01-zvedavost-je-start-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-01-zvedavost-je-start-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 2,
+      "slug": "kazde-dite-na-orbitu",
+      "headline": "Každé dítě na orbitu.",
+      "subhead": "Jeden pohled na Zemi může změnit celý život.",
+      "proof": "Perspektiva není luxus. Je to základ.",
+      "accent": "PERSPEKTIVA",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-02-kazde-dite-na-orbitu-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-02-kazde-dite-na-orbitu-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-02-kazde-dite-na-orbitu-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-02-kazde-dite-na-orbitu-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-02-kazde-dite-na-orbitu-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-02-kazde-dite-na-orbitu-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-02-kazde-dite-na-orbitu-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-02-kazde-dite-na-orbitu-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-02-kazde-dite-na-orbitu-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-02-kazde-dite-na-orbitu-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-02-kazde-dite-na-orbitu-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-02-kazde-dite-na-orbitu-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-02-kazde-dite-na-orbitu-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-02-kazde-dite-na-orbitu-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-02-kazde-dite-na-orbitu-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-02-kazde-dite-na-orbitu-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 3,
+      "slug": "myslet-hvezd",
+      "headline": "Myslíme na hvězdy.",
+      "subhead": "Dívat se dál než za nejbližší horizont.",
+      "proof": "Učíme odvaze, která stojí na poznání.",
+      "accent": "HORIZONT",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-03-myslet-hvezd-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-03-myslet-hvezd-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-03-myslet-hvezd-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-03-myslet-hvezd-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-03-myslet-hvezd-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-03-myslet-hvezd-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-03-myslet-hvezd-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-03-myslet-hvezd-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-03-myslet-hvezd-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-03-myslet-hvezd-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-03-myslet-hvezd-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-03-myslet-hvezd-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-03-myslet-hvezd-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-03-myslet-hvezd-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-03-myslet-hvezd-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-03-myslet-hvezd-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 4,
+      "slug": "jednat-vedecky",
+      "headline": "Jednáme vědecky.",
+      "subhead": "Nadšení nestačí. Důkaz rozhoduje.",
+      "proof": "Pozorovat, ověřit, teprve potom tvrdit.",
+      "accent": "DŮKAZ",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-04-jednat-vedecky-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-04-jednat-vedecky-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-04-jednat-vedecky-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-04-jednat-vedecky-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-04-jednat-vedecky-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-04-jednat-vedecky-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-04-jednat-vedecky-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-04-jednat-vedecky-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-04-jednat-vedecky-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-04-jednat-vedecky-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-04-jednat-vedecky-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-04-jednat-vedecky-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-04-jednat-vedecky-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-04-jednat-vedecky-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-04-jednat-vedecky-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-04-jednat-vedecky-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "jedna-planeta",
+      "headline": "Jedna planeta.",
+      "subhead": "Všichni sdílíme stejný domov i odpovědnost.",
+      "proof": "Kosmický pohled vrací věcem měřítko.",
+      "accent": "DOMOV",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-05-jedna-planeta-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-05-jedna-planeta-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-05-jedna-planeta-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-05-jedna-planeta-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-05-jedna-planeta-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-05-jedna-planeta-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-05-jedna-planeta-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-05-jedna-planeta-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-05-jedna-planeta-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-05-jedna-planeta-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-05-jedna-planeta-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-05-jedna-planeta-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-05-jedna-planeta-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-05-jedna-planeta-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-05-jedna-planeta-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-05-jedna-planeta-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 6,
+      "slug": "hranice-konci",
+      "headline": "Hranice končí.",
+      "subhead": "Zvědavost nezná ploty ani mapové čáry.",
+      "proof": "Věda spojuje tam, kde svět rozděluje.",
+      "accent": "BEZ HRANIC",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-06-hranice-konci-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-06-hranice-konci-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-06-hranice-konci-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-06-hranice-konci-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-06-hranice-konci-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-06-hranice-konci-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-06-hranice-konci-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-06-hranice-konci-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-06-hranice-konci-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-06-hranice-konci-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-06-hranice-konci-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-06-hranice-konci-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-06-hranice-konci-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-06-hranice-konci-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-06-hranice-konci-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-06-hranice-konci-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 7,
+      "slug": "budoucnost-je-smer",
+      "headline": "Budoucnost je směr.",
+      "subhead": "Není to místo, kam dorazíme náhodou.",
+      "proof": "Volíme ji dnešními rozhodnutími.",
+      "accent": "SMĚR",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-07-budoucnost-je-smer-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-07-budoucnost-je-smer-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-07-budoucnost-je-smer-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-07-budoucnost-je-smer-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-07-budoucnost-je-smer-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-07-budoucnost-je-smer-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-07-budoucnost-je-smer-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-07-budoucnost-je-smer-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-07-budoucnost-je-smer-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-07-budoucnost-je-smer-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-07-budoucnost-je-smer-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-07-budoucnost-je-smer-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-07-budoucnost-je-smer-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-07-budoucnost-je-smer-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-07-budoucnost-je-smer-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-07-budoucnost-je-smer-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 8,
+      "slug": "lekce-ktere-musis-videt",
+      "headline": "Některé lekce musíš vidět.",
+      "subhead": "Zážitek učí rychleji než tisíc slov.",
+      "proof": "Pohled z výšky mění vztah k Zemi.",
+      "accent": "ZÁŽITEK",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-08-lekce-ktere-musis-videt-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-08-lekce-ktere-musis-videt-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-08-lekce-ktere-musis-videt-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-08-lekce-ktere-musis-videt-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-08-lekce-ktere-musis-videt-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-08-lekce-ktere-musis-videt-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-08-lekce-ktere-musis-videt-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-08-lekce-ktere-musis-videt-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-08-lekce-ktere-musis-videt-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-08-lekce-ktere-musis-videt-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-08-lekce-ktere-musis-videt-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-08-lekce-ktere-musis-videt-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-08-lekce-ktere-musis-videt-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-08-lekce-ktere-musis-videt-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-08-lekce-ktere-musis-videt-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-08-lekce-ktere-musis-videt-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 9,
+      "slug": "odvaha-ptat-se",
+      "headline": "Odvaha ptát se.",
+      "subhead": "Nejlepší otázky často zní jednoduše.",
+      "proof": "Děti potřebují prostor hledat vlastní odpovědi.",
+      "accent": "OTÁZKY",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-09-odvaha-ptat-se-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-09-odvaha-ptat-se-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-09-odvaha-ptat-se-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-09-odvaha-ptat-se-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-09-odvaha-ptat-se-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-09-odvaha-ptat-se-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-09-odvaha-ptat-se-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-09-odvaha-ptat-se-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-09-odvaha-ptat-se-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-09-odvaha-ptat-se-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-09-odvaha-ptat-se-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-09-odvaha-ptat-se-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-09-odvaha-ptat-se-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-09-odvaha-ptat-se-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-09-odvaha-ptat-se-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-09-odvaha-ptat-se-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 10,
+      "slug": "veda-je-dobrodruzstvi",
+      "headline": "Věda je dobrodružství.",
+      "subhead": "Ne útěk od světa, ale cesta k jeho pochopení.",
+      "proof": "Objevování začíná tam, kde končí jistota.",
+      "accent": "OBJEV",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-10-veda-je-dobrodruzstvi-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-10-veda-je-dobrodruzstvi-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-10-veda-je-dobrodruzstvi-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-10-veda-je-dobrodruzstvi-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-10-veda-je-dobrodruzstvi-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-10-veda-je-dobrodruzstvi-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-10-veda-je-dobrodruzstvi-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-10-veda-je-dobrodruzstvi-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-10-veda-je-dobrodruzstvi-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-10-veda-je-dobrodruzstvi-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-10-veda-je-dobrodruzstvi-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-10-veda-je-dobrodruzstvi-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-10-veda-je-dobrodruzstvi-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-10-veda-je-dobrodruzstvi-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-10-veda-je-dobrodruzstvi-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-10-veda-je-dobrodruzstvi-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 11,
+      "slug": "budujeme-pro-ty-po-nas",
+      "headline": "Budujeme pro ty po nás.",
+      "subhead": "Každé rozhodnutí má svůj zítřek.",
+      "proof": "Děti zdědí výsledky naší odvahy i opatrnosti.",
+      "accent": "ZÍTŘEK",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-11-budujeme-pro-ty-po-nas-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-11-budujeme-pro-ty-po-nas-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-11-budujeme-pro-ty-po-nas-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-11-budujeme-pro-ty-po-nas-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-11-budujeme-pro-ty-po-nas-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-11-budujeme-pro-ty-po-nas-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-11-budujeme-pro-ty-po-nas-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-11-budujeme-pro-ty-po-nas-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-11-budujeme-pro-ty-po-nas-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-11-budujeme-pro-ty-po-nas-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-11-budujeme-pro-ty-po-nas-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-11-budujeme-pro-ty-po-nas-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-11-budujeme-pro-ty-po-nas-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-11-budujeme-pro-ty-po-nas-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-11-budujeme-pro-ty-po-nas-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-11-budujeme-pro-ty-po-nas-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 12,
+      "slug": "velke-sny-potrebuji-oporu",
+      "headline": "Velké sny potřebují oporu.",
+      "subhead": "Talent nestačí, když chybí příležitost.",
+      "proof": "Otevíráme cestu dětem bez ohledu na start.",
+      "accent": "PŘÍLEŽITOST",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-12-velke-sny-potrebuji-oporu-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-12-velke-sny-potrebuji-oporu-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-12-velke-sny-potrebuji-oporu-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-12-velke-sny-potrebuji-oporu-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-12-velke-sny-potrebuji-oporu-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-12-velke-sny-potrebuji-oporu-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-12-velke-sny-potrebuji-oporu-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-12-velke-sny-potrebuji-oporu-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-12-velke-sny-potrebuji-oporu-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-12-velke-sny-potrebuji-oporu-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-12-velke-sny-potrebuji-oporu-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-12-velke-sny-potrebuji-oporu-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-12-velke-sny-potrebuji-oporu-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-12-velke-sny-potrebuji-oporu-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-12-velke-sny-potrebuji-oporu-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-12-velke-sny-potrebuji-oporu-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 13,
+      "slug": "vesmir-neni-luxus",
+      "headline": "Vesmír není luxus.",
+      "subhead": "Je to perspektiva, kterou si zaslouží každý.",
+      "proof": "Nejde o útěk vzhůru. Jde o návrat k Zemi.",
+      "accent": "PERSPEKTIVA",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-13-vesmir-neni-luxus-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-13-vesmir-neni-luxus-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-13-vesmir-neni-luxus-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-13-vesmir-neni-luxus-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-13-vesmir-neni-luxus-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-13-vesmir-neni-luxus-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-13-vesmir-neni-luxus-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-13-vesmir-neni-luxus-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-13-vesmir-neni-luxus-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-13-vesmir-neni-luxus-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-13-vesmir-neni-luxus-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-13-vesmir-neni-luxus-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-13-vesmir-neni-luxus-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-13-vesmir-neni-luxus-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-13-vesmir-neni-luxus-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-13-vesmir-neni-luxus-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 14,
+      "slug": "zeme-z-vysky",
+      "headline": "Země z výšky.",
+      "subhead": "Malý pohled, velká odpovědnost.",
+      "proof": "Kdo vidí celek, rozhoduje méně krátkozrace.",
+      "accent": "ODPOVĚDNOST",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-14-zeme-z-vysky-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-14-zeme-z-vysky-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-14-zeme-z-vysky-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-14-zeme-z-vysky-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-14-zeme-z-vysky-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-14-zeme-z-vysky-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-14-zeme-z-vysky-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-14-zeme-z-vysky-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-14-zeme-z-vysky-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-14-zeme-z-vysky-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-14-zeme-z-vysky-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-14-zeme-z-vysky-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-14-zeme-z-vysky-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-14-zeme-z-vysky-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-14-zeme-z-vysky-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-14-zeme-z-vysky-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 15,
+      "slug": "ucime-se-divat",
+      "headline": "Učíme se dívat.",
+      "subhead": "Ne rychle soudit, ale přesně pozorovat.",
+      "proof": "Pozornost je první nástroj vědy.",
+      "accent": "POZOROVÁNÍ",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-15-ucime-se-divat-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-15-ucime-se-divat-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-15-ucime-se-divat-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-15-ucime-se-divat-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-15-ucime-se-divat-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-15-ucime-se-divat-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-15-ucime-se-divat-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-15-ucime-se-divat-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-15-ucime-se-divat-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-15-ucime-se-divat-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-15-ucime-se-divat-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-15-ucime-se-divat-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-15-ucime-se-divat-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-15-ucime-se-divat-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-15-ucime-se-divat-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-15-ucime-se-divat-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 16,
+      "slug": "kazda-otazka-ma-orbitu",
+      "headline": "Každá otázka má orbitu.",
+      "subhead": "Když ji sleduješ dost dlouho, ukáže souvislosti.",
+      "proof": "Zvědavost drží myšlení v pohybu.",
+      "accent": "SOUVISLOSTI",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-16-kazda-otazka-ma-orbitu-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-16-kazda-otazka-ma-orbitu-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-16-kazda-otazka-ma-orbitu-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-16-kazda-otazka-ma-orbitu-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-16-kazda-otazka-ma-orbitu-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-16-kazda-otazka-ma-orbitu-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-16-kazda-otazka-ma-orbitu-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-16-kazda-otazka-ma-orbitu-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-16-kazda-otazka-ma-orbitu-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-16-kazda-otazka-ma-orbitu-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-16-kazda-otazka-ma-orbitu-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-16-kazda-otazka-ma-orbitu-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-16-kazda-otazka-ma-orbitu-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-16-kazda-otazka-ma-orbitu-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-16-kazda-otazka-ma-orbitu-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-16-kazda-otazka-ma-orbitu-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 17,
+      "slug": "mirit-vysoko",
+      "headline": "Mířit vysoko.",
+      "subhead": "Pro všechny. Ne jen pro vyvolené.",
+      "proof": "Budoucnost má být otevřená, ne exkluzivní.",
+      "accent": "PRO VŠECHNY",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-17-mirit-vysoko-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-17-mirit-vysoko-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-17-mirit-vysoko-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-17-mirit-vysoko-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-17-mirit-vysoko-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-17-mirit-vysoko-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-17-mirit-vysoko-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-17-mirit-vysoko-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-17-mirit-vysoko-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-17-mirit-vysoko-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-17-mirit-vysoko-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-17-mirit-vysoko-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-17-mirit-vysoko-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-17-mirit-vysoko-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-17-mirit-vysoko-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-17-mirit-vysoko-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 18,
+      "slug": "skola-jako-ridici-stredisko",
+      "headline": "Škola jako řídicí středisko.",
+      "subhead": "Třída může být první mise.",
+      "proof": "Stačí dát dětem nástroje a důvěru.",
+      "accent": "MISE",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-18-skola-jako-ridici-stredisko-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-18-skola-jako-ridici-stredisko-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-18-skola-jako-ridici-stredisko-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-18-skola-jako-ridici-stredisko-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-18-skola-jako-ridici-stredisko-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-18-skola-jako-ridici-stredisko-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-18-skola-jako-ridici-stredisko-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-18-skola-jako-ridici-stredisko-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-18-skola-jako-ridici-stredisko-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-18-skola-jako-ridici-stredisko-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-18-skola-jako-ridici-stredisko-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-18-skola-jako-ridici-stredisko-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-18-skola-jako-ridici-stredisko-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-18-skola-jako-ridici-stredisko-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-18-skola-jako-ridici-stredisko-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-18-skola-jako-ridici-stredisko-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 19,
+      "slug": "dnesni-rozhodnuti",
+      "headline": "Dnešní rozhodnutí.",
+      "subhead": "Jejich zítřek.",
+      "proof": "To, co podpoříme dnes, ponese svět zítra.",
+      "accent": "ZÍTŘEK",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-19-dnesni-rozhodnuti-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-19-dnesni-rozhodnuti-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-19-dnesni-rozhodnuti-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-19-dnesni-rozhodnuti-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-19-dnesni-rozhodnuti-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-19-dnesni-rozhodnuti-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-19-dnesni-rozhodnuti-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-19-dnesni-rozhodnuti-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-19-dnesni-rozhodnuti-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-19-dnesni-rozhodnuti-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-19-dnesni-rozhodnuti-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-19-dnesni-rozhodnuti-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-19-dnesni-rozhodnuti-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-19-dnesni-rozhodnuti-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-19-dnesni-rozhodnuti-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-19-dnesni-rozhodnuti-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 20,
+      "slug": "svetlo-pro-zvedave",
+      "headline": "Světlo pro zvídavé.",
+      "subhead": "Někdy stačí jedna jiskra.",
+      "proof": "Dobrá otázka dokáže rozzářit celý směr.",
+      "accent": "JISKRA",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-20-svetlo-pro-zvedave-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-20-svetlo-pro-zvedave-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-20-svetlo-pro-zvedave-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-20-svetlo-pro-zvedave-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-20-svetlo-pro-zvedave-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-20-svetlo-pro-zvedave-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-20-svetlo-pro-zvedave-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-20-svetlo-pro-zvedave-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-20-svetlo-pro-zvedave-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-20-svetlo-pro-zvedave-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-20-svetlo-pro-zvedave-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-20-svetlo-pro-zvedave-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-20-svetlo-pro-zvedave-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-20-svetlo-pro-zvedave-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-20-svetlo-pro-zvedave-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-20-svetlo-pro-zvedave-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 21,
+      "slug": "poznej-aby-chranil",
+      "headline": "Poznej, abys chránil.",
+      "subhead": "Planetu chráníme líp, když jí rozumíme.",
+      "proof": "Vztah k Zemi začíná zkušeností.",
+      "accent": "PLANETA",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-21-poznej-aby-chranil-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-21-poznej-aby-chranil-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-21-poznej-aby-chranil-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-21-poznej-aby-chranil-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-21-poznej-aby-chranil-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-21-poznej-aby-chranil-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-21-poznej-aby-chranil-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-21-poznej-aby-chranil-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-21-poznej-aby-chranil-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-21-poznej-aby-chranil-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-21-poznej-aby-chranil-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-21-poznej-aby-chranil-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-21-poznej-aby-chranil-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-21-poznej-aby-chranil-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-21-poznej-aby-chranil-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-21-poznej-aby-chranil-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 22,
+      "slug": "technologie-s-lidskym-meritkem",
+      "headline": "Technologie s lidským měřítkem.",
+      "subhead": "Stroje jsou nástroje. Směr určují lidé.",
+      "proof": "Věda má sloužit dětem, ne naopak.",
+      "accent": "MĚŘÍTKO",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-hill-rocket-trail-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-22-technologie-s-lidskym-meritkem-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-22-technologie-s-lidskym-meritkem-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-22-technologie-s-lidskym-meritkem-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-22-technologie-s-lidskym-meritkem-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-22-technologie-s-lidskym-meritkem-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-22-technologie-s-lidskym-meritkem-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-22-technologie-s-lidskym-meritkem-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-22-technologie-s-lidskym-meritkem-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-22-technologie-s-lidskym-meritkem-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-22-technologie-s-lidskym-meritkem-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-22-technologie-s-lidskym-meritkem-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-22-technologie-s-lidskym-meritkem-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-22-technologie-s-lidskym-meritkem-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-22-technologie-s-lidskym-meritkem-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-22-technologie-s-lidskym-meritkem-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-22-technologie-s-lidskym-meritkem-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 23,
+      "slug": "spolecny-horizont",
+      "headline": "Společný horizont.",
+      "subhead": "Budoucnost není soutěž jednotlivců.",
+      "proof": "Nejlepší mise se staví společně.",
+      "accent": "SPOLU",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-generational-stewardship-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-23-spolecny-horizont-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-23-spolecny-horizont-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-23-spolecny-horizont-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-23-spolecny-horizont-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-23-spolecny-horizont-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-23-spolecny-horizont-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-23-spolecny-horizont-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-23-spolecny-horizont-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-23-spolecny-horizont-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-23-spolecny-horizont-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-23-spolecny-horizont-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-23-spolecny-horizont-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-23-spolecny-horizont-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-23-spolecny-horizont-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-23-spolecny-horizont-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-23-spolecny-horizont-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 24,
+      "slug": "duvera-v-dukazy",
+      "headline": "Důvěra v důkazy.",
+      "subhead": "Ne v dojmy. Ne v hluk.",
+      "proof": "Když děti učíme ověřovat, učíme je svobodě.",
+      "accent": "DŮVĚRA",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-observatory-curiosity-vertical.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-24-duvera-v-dukazy-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-24-duvera-v-dukazy-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-24-duvera-v-dukazy-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-24-duvera-v-dukazy-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-24-duvera-v-dukazy-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-24-duvera-v-dukazy-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-24-duvera-v-dukazy-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-24-duvera-v-dukazy-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-24-duvera-v-dukazy-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-24-duvera-v-dukazy-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-24-duvera-v-dukazy-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-24-duvera-v-dukazy-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-24-duvera-v-dukazy-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-24-duvera-v-dukazy-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-24-duvera-v-dukazy-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-24-duvera-v-dukazy-clean-thumb.jpg"
+      }
+    },
+    {
+      "index": 25,
+      "slug": "zacni-otazkou",
+      "headline": "Začni otázkou.",
+      "subhead": "Pak sleduj, kam tě dovede.",
+      "proof": "Tak vzniká věda. Tak roste odvaha.",
+      "accent": "ZAČÁTEK",
+      "background_source": "assets/campaign-posters/generated-20260616/astronautiste-mission-control-classroom-wide.png",
+      "assets": {
+        "clean_vertical": "assets/campaign-posters/series-25-20260616/clean/vertical/astronautiste-25-zacni-otazkou-clean-vertical.jpg",
+        "clean_wide_16x9": "assets/campaign-posters/series-25-20260616/clean/wide-16x9/astronautiste-25-zacni-otazkou-clean-wide-16x9.jpg",
+        "clean_social": "static/og/social/series-25-20260616/clean/astronautiste-25-zacni-otazkou-clean-social.jpg",
+        "rendered_vertical": "assets/campaign-posters/series-25-20260616/vertical/astronautiste-25-zacni-otazkou-vertical.jpg",
+        "rendered_wide_16x9": "assets/campaign-posters/series-25-20260616/wide-16x9/astronautiste-25-zacni-otazkou-wide-16x9.jpg",
+        "rendered_social": "static/og/social/series-25-20260616/astronautiste-25-zacni-otazkou-social.jpg",
+        "rendered_thumb": "static/og/social/series-25-20260616/thumbs/astronautiste-25-zacni-otazkou-thumb.jpg",
+        "clean_thumb": "static/og/social/series-25-20260616/thumbs/clean/astronautiste-25-zacni-otazkou-clean-thumb.jpg"
+      },
+      "urls": {
+        "clean_vertical": "/campaign/series-25-20260616/clean/vertical/astronautiste-25-zacni-otazkou-clean-vertical.jpg",
+        "clean_wide_16x9": "/campaign/series-25-20260616/clean/wide-16x9/astronautiste-25-zacni-otazkou-clean-wide-16x9.jpg",
+        "clean_social": "/og/social/series-25-20260616/clean/astronautiste-25-zacni-otazkou-clean-social.jpg",
+        "rendered_vertical": "/campaign/series-25-20260616/rendered/vertical/astronautiste-25-zacni-otazkou-vertical.jpg",
+        "rendered_wide_16x9": "/campaign/series-25-20260616/rendered/wide-16x9/astronautiste-25-zacni-otazkou-wide-16x9.jpg",
+        "rendered_social": "/og/social/series-25-20260616/astronautiste-25-zacni-otazkou-social.jpg",
+        "rendered_thumb": "/og/social/series-25-20260616/thumbs/astronautiste-25-zacni-otazkou-thumb.jpg",
+        "clean_thumb": "/og/social/series-25-20260616/thumbs/clean/astronautiste-25-zacni-otazkou-clean-thumb.jpg"
+      }
+    }
+  ]
+}
