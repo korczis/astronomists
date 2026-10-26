@@ -1,0 +1,177 @@
+{
+  "version": "20260616",
+  "set_id": "pages-10-20260616",
+  "brand": "Astronautiste",
+  "mode": "clean_no_text",
+  "formats": {
+    "source_png": {
+      "size": "generator-native",
+      "text": false
+    },
+    "clean_16x9_8k": {
+      "size": [
+        7680,
+        4320
+      ],
+      "dpi": 300,
+      "text": false
+    },
+    "thumb": {
+      "size": [
+        960,
+        540
+      ],
+      "dpi": 144,
+      "text": false
+    }
+  },
+  "constraints": [
+    "no text",
+    "no logos",
+    "no labels",
+    "no watermark",
+    "16:9 page backgrounds"
+  ],
+  "topics": [
+    {
+      "index": 1,
+      "slug": "01-orbital-station-observation",
+      "title": "Orbital station observation deck",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-01-orbital-station-observation-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-01-orbital-station-observation-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-01-orbital-station-observation-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-01-orbital-station-observation-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-01-orbital-station-observation-thumb.jpg"
+    },
+    {
+      "index": 2,
+      "slug": "02-eva-spacewalk",
+      "title": "EVA outside orbital station",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-02-eva-spacewalk-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-02-eva-spacewalk-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-02-eva-spacewalk-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-02-eva-spacewalk-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-02-eva-spacewalk-thumb.jpg"
+    },
+    {
+      "index": 3,
+      "slug": "03-station-laboratory",
+      "title": "Microgravity laboratory on station",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-03-station-laboratory-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-03-station-laboratory-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-03-station-laboratory-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-03-station-laboratory-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-03-station-laboratory-thumb.jpg"
+    },
+    {
+      "index": 4,
+      "slug": "04-lunar-transfer",
+      "title": "Lunar transfer spacecraft",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-04-lunar-transfer-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-04-lunar-transfer-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-04-lunar-transfer-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-04-lunar-transfer-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-04-lunar-transfer-thumb.jpg"
+    },
+    {
+      "index": 5,
+      "slug": "05-lunar-surface-excursion",
+      "title": "Lunar surface educational excursion",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-05-lunar-surface-excursion-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-05-lunar-surface-excursion-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-05-lunar-surface-excursion-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-05-lunar-surface-excursion-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-05-lunar-surface-excursion-thumb.jpg"
+    },
+    {
+      "index": 6,
+      "slug": "06-orbital-classroom",
+      "title": "Orbital station classroom",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-06-orbital-classroom-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-06-orbital-classroom-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-06-orbital-classroom-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-06-orbital-classroom-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-06-orbital-classroom-thumb.jpg"
+    },
+    {
+      "index": 7,
+      "slug": "07-moon-return-docking",
+      "title": "Return docking after lunar mission",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-07-moon-return-docking-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-07-moon-return-docking-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-07-moon-return-docking-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-07-moon-return-docking-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-07-moon-return-docking-thumb.jpg"
+    },
+    {
+      "index": 8,
+      "slug": "08-orbital-sunrise-corridor",
+      "title": "Orbital sunrise station corridor",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-08-orbital-sunrise-corridor-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-08-orbital-sunrise-corridor-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-08-orbital-sunrise-corridor-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-08-orbital-sunrise-corridor-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-08-orbital-sunrise-corridor-thumb.jpg"
+    },
+    {
+      "index": 9,
+      "slug": "09-eva-airlock-prep",
+      "title": "EVA airlock preparation",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-09-eva-airlock-prep-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-09-eva-airlock-prep-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-09-eva-airlock-prep-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-09-eva-airlock-prep-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-09-eva-airlock-prep-thumb.jpg"
+    },
+    {
+      "index": 10,
+      "slug": "10-mission-control-classroom",
+      "title": "Mission control classroom connected to orbit",
+      "source": "assets/page-backgrounds/pages-10-20260616/source-clean/astronautiste-page-bg-10-mission-control-classroom-source.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "asset": "static/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-10-mission-control-classroom-clean-16x9-8k.jpg",
+      "thumb": "static/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-10-mission-control-classroom-thumb.jpg",
+      "url": "/page-backgrounds/pages-10-20260616/clean-16x9-8k/astronautiste-page-bg-10-mission-control-classroom-clean-16x9-8k.jpg",
+      "thumb_url": "/page-backgrounds/pages-10-20260616/thumbs/astronautiste-page-bg-10-mission-control-classroom-thumb.jpg"
+    }
+  ]
+}
