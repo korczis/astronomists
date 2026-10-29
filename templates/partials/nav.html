@@ -1,36 +1,53 @@
-<nav aria-label="Hlavní navigace" class="sticky top-0 z-30 border-b border-mid-gray/60 bg-void/85 backdrop-blur-md">
-  <div class="container-content flex flex-wrap items-center justify-between gap-3 py-3.5">
-    <a href="/" class="flex items-center gap-2.5">
-      <span class="h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_12px_#d4a574]"></span>
-      <span class="text-base font-bold tracking-[0.04em] text-presence">ASTRONAUTISTÉ</span>
-    </a>
+{#- Marketing navbar (Flowbite Pro header block, adapted): brand left, CTA + collapse toggle
+    right, links collapse below lg via Flowbite's data-collapse-toggle. Dark-only site. -#}
+{%- set cp = current_path | default(value="") -%}
+{%- set nav_items = [
+  "/proc/|Proč",
+  "/manifest/|Manifest",
+  "/pro-koho/|Pro&nbsp;koho",
+  "/motivy/|Motivy",
+  "/kampan/|Kampaň",
+  "/galerie/|Galerie",
+  "/brand/|Brand&nbsp;&amp;&nbsp;Docs",
+] -%}
+<header class="sticky top-0 z-30">
+  <nav aria-label="Hlavní navigace"
+    class="border-b border-gray-200 bg-white/95 px-4 py-2.5 backdrop-blur-md dark:border-gray-700 dark:bg-gray-800/90 lg:px-6">
+    <div class="mx-auto flex max-w-content flex-wrap items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5">
+        <span class="h-2.5 w-2.5 rounded-full bg-gold shadow-[0_0_12px_#d4a574]" aria-hidden="true"></span>
+        <span class="self-center whitespace-nowrap text-base font-bold tracking-[0.04em] text-gray-900 dark:text-white">ASTRONAUTISTÉ</span>
+      </a>
 
-    <button data-collapse-toggle="nav-menu" type="button"
-      class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-light-gray hover:bg-deep-gray md:hidden"
-      aria-controls="nav-menu" aria-expanded="false">
-      <span class="sr-only">Otevřít menu</span>
-      <svg class="h-5 w-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15"/>
-      </svg>
-    </button>
+      <div class="flex items-center gap-2 lg:order-2">
+        <a href="/pridej-se/"
+          class="rounded-lg bg-primary-500 px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-gray-900 hover:bg-primary-400 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-800 lg:px-5 lg:py-2.5">
+          Přidej se
+        </a>
+        <button data-collapse-toggle="nav-menu" type="button"
+          class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 lg:hidden"
+          aria-controls="nav-menu" aria-expanded="false">
+          <span class="sr-only">Otevřít menu</span>
+          <svg class="h-5 w-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
 
-    <div class="hidden w-full md:block md:w-auto" id="nav-menu">
-      <ul class="mt-3 flex flex-col gap-1 text-sm font-medium md:mt-0 md:flex-row md:items-center md:gap-7">
-        <li><a href="/proc/" class="block py-1.5 text-light-gray hover:text-gold">Proč</a></li>
-        <li><a href="/manifest/" class="block py-1.5 text-light-gray hover:text-gold">Manifest</a></li>
-        <li><a href="/pro-koho/" class="block py-1.5 text-light-gray hover:text-gold">Pro&nbsp;koho</a></li>
-        <li><a href="/motivy/" class="block py-1.5 text-light-gray hover:text-gold">Motivy</a></li>
-        <li><a href="/kampan/" class="block py-1.5 text-light-gray hover:text-gold">Kampaň</a></li>
-        <li><a href="/galerie/" class="block py-1.5 text-light-gray hover:text-gold">Galerie</a></li>
-        <li><a href="/brand/" class="block py-1.5 text-light-gray hover:text-gold">Brand&nbsp;&amp;&nbsp;Docs</a></li>
-        <li>
-          <a href="/pridej-se/"
-            class="mt-1 inline-flex items-center rounded-lg bg-presence px-4 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-void transition hover:bg-gold md:mt-0">
-            Přidej se
-          </a>
-        </li>
-      </ul>
+      <div class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto" id="nav-menu">
+        <ul class="mt-4 flex flex-col text-sm font-medium lg:mt-0 lg:flex-row lg:space-x-7">
+          {%- for item in nav_items %}
+          {%- set parts = item | split(pat="|") %}
+          {%- set href = parts | first %}
+          {%- set active = href in cp %}
+          <li>
+            <a href="{{ href }}"{% if active %} aria-current="page"{% endif %}
+              class="block rounded-lg py-2 pl-3 pr-4 lg:p-0 {% if active %}bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-gold lg:bg-transparent lg:dark:bg-transparent{% else %}border-b border-gray-100 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white lg:border-0 lg:hover:bg-transparent lg:hover:text-primary-600 lg:dark:hover:bg-transparent lg:dark:hover:text-gold{% endif %}">{{ parts | last | safe }}</a>
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

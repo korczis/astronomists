@@ -17,11 +17,8 @@
   </div>
   {%- endif %}
   <div class="container-content relative z-10 py-16 md:py-24">
-    <nav aria-label="Drobečková navigace" class="flex flex-wrap items-center gap-2 text-xs text-mid-gray">
-      <a href="/" class="hover:text-gold">Domů</a>
-      <span aria-hidden="true">/</span>
-      <span class="text-light-gray">{{ section.title }}</span>
-    </nav>
+    {%- set crumb_current = section.title %}
+    {% include "partials/breadcrumb.html" %}
     {%- if section.extra.eyebrow %}
     <span class="eyebrow mt-6">{{ section.extra.eyebrow }}</span>
     {%- endif %}
