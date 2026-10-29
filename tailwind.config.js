@@ -18,6 +18,19 @@ module.exports = {
         'deep-gray': '#1a1a1a',
         'mid-gray': '#404040',
         'light-gray': '#e8e8e8',
+        // Flowbite Pro `primary` role, mapped onto the Prague Gold accent (500 = gold).
+        primary: {
+          50: '#fbf6f0',
+          100: '#f6ecdf',
+          200: '#eed8bf',
+          300: '#e4c19c',
+          400: '#dcb388',
+          500: '#d4a574',
+          600: '#c08a52',
+          700: '#a06d3d',
+          800: '#7f5633',
+          900: '#67462b',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
