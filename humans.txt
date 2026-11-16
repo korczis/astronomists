@@ -1,0 +1,11 @@
+/* TEAM */
+  Brand: Astronautisté
+  Site: https://astronautiste.cz
+  Source: https://github.com/korczis/astronomists
+
+/* SITE */
+  Last update: 2026/06/16
+  Language: Čeština (cs-CZ) + English
+  Standards: HTML5, CSS3, JSON-LD, Open Graph
+  Components: Zola, Tailwind CSS, Flowbite, GitHub Pages
+  Tagline: Myslíme na hvězdy, jednáme vědecky.
